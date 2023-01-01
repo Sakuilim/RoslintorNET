@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj": {}
+    "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj": {
+    "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj",
+        "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj",
         "projectName": "*Roslintor.csproj*",
-        "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj",
+        "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj",
         "packagesPath": "C:\\Users\\Marius Milius\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\obj\\",
+        "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

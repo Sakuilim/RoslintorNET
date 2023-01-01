@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uKzSccwRbvtp685jjhFBC4wQP2KWlLFoLMXnhDuirJ0HoXwU1f0K3YMLDwve+FHX9u4HEvysgHIiz/u1mMu91g==",
+  "dgSpecHash": "/qEBbRDYDhDjtLdqgqc2NmWNCP2y+43rjfa3Cj2ZYLHLwS/HUUjnS3ZgrE80sbtrle1xF5KNGAMhGb903s6H6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.Test\\Roslintor.Test.csproj",
+  "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Test\\Roslintor.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marius Milius\\.nuget\\packages\\diffplex\\1.4.4\\diffplex.1.4.4.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis\\3.3.1\\microsoft.codeanalysis.3.3.1.nupkg.sha512",
