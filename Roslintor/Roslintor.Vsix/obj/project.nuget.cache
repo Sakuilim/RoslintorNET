@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "oratpNTRSh0YVBK0tdazynQTauqByG3vSSQ9IiXdLITzvDO7TY3uWmR4tXoVlCQGw/CpsA2PO6+mE7nui6/zpQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.Vsix\\Roslintor.Vsix.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.8\\microsoft.codeanalysis.analyzers.2.9.8.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.1\\microsoft.codeanalysis.common.3.3.1.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.3.1\\microsoft.codeanalysis.csharp.3.3.1.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\3.3.1\\microsoft.codeanalysis.csharp.workspaces.3.3.1.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\3.3.1\\microsoft.codeanalysis.workspaces.common.3.3.1.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.visualstudio.sdk.analyzers\\15.8.33\\microsoft.visualstudio.sdk.analyzers.15.8.33.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.visualstudio.threading.analyzers\\15.8.122\\microsoft.visualstudio.threading.analyzers.15.8.122.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.vssdk.buildtools\\16.8.3038\\microsoft.vssdk.buildtools.16.8.3038.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.composition\\1.0.31\\system.composition.1.0.31.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.composition.attributedmodel\\1.0.31\\system.composition.attributedmodel.1.0.31.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.composition.convention\\1.0.31\\system.composition.convention.1.0.31.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.composition.hosting\\1.0.31\\system.composition.hosting.1.0.31.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.composition.runtime\\1.0.31\\system.composition.runtime.1.0.31.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.composition.typedparts\\1.0.31\\system.composition.typedparts.1.0.31.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,259 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.Test\\Roslintor.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj",
+        "projectName": "Roslintor.CodeFixes",
+        "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj",
+        "packagesPath": "C:\\Users\\Marius Milius\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.CodeFixes\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Marius Milius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj": {
+                "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.Test\\Roslintor.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.Test\\Roslintor.Test.csproj",
+        "projectName": "Roslintor.Test",
+        "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.Test\\Roslintor.Test.csproj",
+        "packagesPath": "C:\\Users\\Marius Milius\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Marius Milius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj": {
+                "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj"
+              },
+              "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj": {
+                "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "Microsoft.CodeAnalysis": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Analyzer.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.CodeFix.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.CodeRefactoring.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.VisualBasic.Analyzer.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.VisualBasic.CodeFix.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.VisualBasic.CodeRefactoring.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj",
+        "projectName": "*Roslintor.csproj*",
+        "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\Roslintor.csproj",
+        "packagesPath": "C:\\Users\\Marius Milius\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\Roslintor\\Roslintor\\Roslintor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Marius Milius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
