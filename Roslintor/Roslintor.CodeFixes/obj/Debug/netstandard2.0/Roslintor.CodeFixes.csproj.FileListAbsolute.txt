@@ -1,0 +1,15 @@
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.CodeFixes.deps.json
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.CodeFixes.dll
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.CodeFixes.pdb
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.dll
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.pdb
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.csproj.AssemblyReference.cache
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixResources.resources
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.csproj.GenerateResource.cache
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.AssemblyInfoInputs.cache
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.AssemblyInfo.cs
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.csproj.CoreCompileInputs.cache
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.csproj.CopyComplete
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.dll
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.pdb
