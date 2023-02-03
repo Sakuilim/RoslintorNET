@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8nPVCWUPfJzexOEBoufw2N7q6ysCuoFTjffDHvswfjWjnuzcMpwC7O7R2SmZGFzK4o15TGuoz7uiQr6SvXqTUg==",
+  "dgSpecHash": "54KGbKbVcc44ryG9XOw+Nlv2TKrJMZohMKpMQPypwDC8GI6ZQq04JWeXDKJBgQxedKweO/GKoXaHNkrycmHGww==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj",
+  "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.8\\microsoft.codeanalysis.analyzers.2.9.8.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.1\\microsoft.codeanalysis.common.3.3.1.nupkg.sha512",
