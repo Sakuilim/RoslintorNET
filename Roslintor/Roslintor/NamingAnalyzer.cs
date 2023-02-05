@@ -1,5 +1,7 @@
-﻿using System.Collections.Immutable;
+﻿using System;
+using System.Collections.Immutable;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -11,7 +13,7 @@ namespace Roslintor
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class NamingAnalyzer : DiagnosticAnalyzer
     {
-        private const string DiagnosticId = "CamelCaseMethodName";
+        private const string DiagnosticId = "Roslintor";
         private const string Title = "Rename your method";
         private const string MessageFormat = "Method '{0}' is not written in camelCase. Consider changing your method name to camelCase";
         private const string Description = "Change your method name to camelCase";
@@ -26,11 +28,13 @@ namespace Roslintor
            isEnabledByDefault: true,
            description: Description);
 
-        public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
+        public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get { return ImmutableArray.Create(Rule); } }
 
         public override void Initialize(AnalysisContext context)
         {
-            context.RegisterSymbolAction(AnalyzeSymbol, SymbolKind.Method);
+            context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
+            context.EnableConcurrentExecution();
+            context.RegisterSyntaxNodeAction(AnalyzeSymbol, SymbolKind.Method);
             //context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             //context.EnableConcurrentExecution();
             //context.RegisterCodeBlockAction(CodeBlockAction);
@@ -56,15 +60,20 @@ namespace Roslintor
             }
         }
 
-        private static void AnalyzeSymbol(SymbolAnalysisContext context)
+        private static void AnalyzeSymbol(SyntaxNodeAnalysisContext context)
         {
-            var methodSymbol = (IMethodSymbol)context.Symbol;
+            var methodDeclaration = context.Node as MethodDeclarationSyntax;
 
-            if (!IsCamelCase(methodSymbol.Name))
+            if(methodDeclaration != null)
             {
-                var diagnostic = Diagnostic.Create(Rule, methodSymbol.Locations[0], methodSymbol.Name);
-                context.ReportDiagnostic(diagnostic);
+                var methodName = methodDeclaration.Identifier.ValueText;
+                if (!IsCamelCase(methodName))
+                {
+                    var diagnostic = Diagnostic.Create(Rule, methodDeclaration.GetLocation(), methodName);
+                    context.ReportDiagnostic(diagnostic);
+                }
             }
+
         }
 
 
@@ -75,12 +84,9 @@ namespace Roslintor
                 return false;
             }
 
-            for (int i = 1; i < name.Length; i++)
+            if (char.IsUpper(name[0]))
             {
-                if (char.IsUpper(name[i]))
-                {
-                    return false;
-                }
+                return false;
             }
 
             return true;

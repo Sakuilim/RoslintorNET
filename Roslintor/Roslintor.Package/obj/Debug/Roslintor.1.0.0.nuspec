@@ -15,9 +15,9 @@
     <repository url="http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE" />
   </metadata>
   <files>
-    <file src="c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Debug\netstandard2.0\Roslintor.dll" target="analyzers\dotnet\cs\Roslintor.dll" />
-    <file src="c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Debug\netstandard2.0\Roslintor.CodeFixes.dll" target="analyzers\dotnet\cs\Roslintor.CodeFixes.dll" />
-    <file src="c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\tools\install.ps1" target="tools\install.ps1" />
-    <file src="c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\tools\uninstall.ps1" target="tools\uninstall.ps1" />
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Debug\netstandard2.0\Roslintor.dll" target="analyzers\dotnet\cs\Roslintor.dll" />
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Debug\netstandard2.0\Roslintor.CodeFixes.dll" target="analyzers\dotnet\cs\Roslintor.CodeFixes.dll" />
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\tools\install.ps1" target="tools\install.ps1" />
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\tools\uninstall.ps1" target="tools\uninstall.ps1" />
   </files>
 </package>

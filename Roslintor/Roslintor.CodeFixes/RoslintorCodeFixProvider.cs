@@ -44,16 +44,18 @@ namespace Roslintor
             context.RegisterCodeFix(
                 CodeAction.Create(
                     title: CodeFixResources.CodeFixTitle,
-                    createChangedSolution: c => MakeUppercaseAsync(context.Document, declaration, c),
+                    createChangedSolution: c => MakeCamelCaseAsync(context.Document, declaration, c),
                     equivalenceKey: nameof(CodeFixResources.CodeFixTitle)),
                 diagnostic);
         }
 
-        private async Task<Solution> MakeUppercaseAsync(Document document, TypeDeclarationSyntax typeDecl, CancellationToken cancellationToken)
+        private async Task<Solution> MakeCamelCaseAsync(Document document, TypeDeclarationSyntax typeDecl, CancellationToken cancellationToken)
         {
             // Compute new uppercase name.
             var identifierToken = typeDecl.Identifier;
-            var newName = identifierToken.Text.ToUpperInvariant();
+            var oldName = identifierToken.Text;
+            var newName = MakeFirstLetterLower(oldName);
+
 
             // Get the symbol representing the type to be renamed.
             var semanticModel = await document.GetSemanticModelAsync(cancellationToken);
@@ -66,6 +68,19 @@ namespace Roslintor
 
             // Return the new solution with the now-uppercase type name.
             return newSolution;
+        }
+
+        private string MakeFirstLetterLower(string name)
+        {
+            if (char.IsUpper(name[0]))
+            {
+                name = Char.ToLower(name[0]) + name.Substring(1);
+            }
+            else if (char.IsLower(name[0]))
+            {
+                return name;
+            }
+            return name;
         }
     }
 }

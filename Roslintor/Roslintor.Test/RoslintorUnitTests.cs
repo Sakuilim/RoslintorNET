@@ -1,7 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.RoslintorAnalyzer,
+    Roslintor.NamingAnalyzer,
     Roslintor.RoslintorCodeFixProvider>;
 
 namespace Roslintor.Test
@@ -9,50 +10,78 @@ namespace Roslintor.Test
     [TestClass]
     public class RoslintorUnitTest
     {
-        //No diagnostics expected to show up
         [TestMethod]
         public async Task TestMethod1()
         {
-            var test = @"";
+            var test = @"
+            using System;
+            using System.Collections.Generic;
+            using System.Linq;
+            using System.Text;
+            using System.Threading.Tasks;
+            using System.Diagnostics;
 
-            await VerifyCS.VerifyAnalyzerAsync(test);
+            namespace ConsoleApplication1
+            {
+                public class TestClass
+                {   
+                    public void {|#0:MethodName|}(string name)
+                    {
+
+                    }    
+                }
+            }";
+
+            var expected = VerifyCS.Diagnostic("Roslintor").WithLocation(0).WithArguments("MethodName");
+
+            Console.WriteLine(expected);
+
+            await VerifyCS.VerifyAnalyzerAsync(test, expected);
         }
 
-        //Diagnostic and CodeFix both triggered and checked for
         [TestMethod]
         public async Task TestMethod2()
         {
             var test = @"
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Diagnostics;
+            using System;
+            using System.Collections.Generic;
+            using System.Linq;
+            using System.Text;
+            using System.Threading.Tasks;
+            using System.Diagnostics;
 
-    namespace ConsoleApplication1
-    {
-        class {|#0:TypeName|}
-        {   
-        }
-    }";
+            namespace ConsoleApplication1
+            {
+                public class ClassName
+                {   
+                    public void {|#0:MethodName|}(string name)
+                    {
+
+                    }   
+                }
+            }";
 
             var fixtest = @"
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Diagnostics;
+            using System;
+            using System.Collections.Generic;
+            using System.Linq;
+            using System.Text;
+            using System.Threading.Tasks;
+            using System.Diagnostics;
 
-    namespace ConsoleApplication1
-    {
-        class TYPENAME
-        {   
-        }
-    }";
+            namespace ConsoleApplication1
+            {
+                public class ClassName
+                {   
+                    public void methodName(string name)
+                    {
 
-            var expected = VerifyCS.Diagnostic("Roslintor").WithLocation(0).WithArguments("TypeName");
+                    }   
+                }
+            }";
+
+            var expected = VerifyCS.Diagnostic("Roslintor").WithLocation(0).WithArguments("MethodName");
+
             await VerifyCS.VerifyCodeFixAsync(test, expected, fixtest);
         }
     }
