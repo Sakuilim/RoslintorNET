@@ -62,7 +62,7 @@ namespace Roslintor
 
         private static void AnalyzeSymbol(SyntaxNodeAnalysisContext context)
         {
-            var methodDeclaration = context.Node as MethodDeclarationSyntax;
+            MethodDeclarationSyntax methodDeclaration = context.Node as MethodDeclarationSyntax;
 
             if(methodDeclaration != null)
             {

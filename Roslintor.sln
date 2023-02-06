@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslintor", "Roslintor\Roslintor\Roslintor.csproj", "{5CDDA232-4FC8-44DB-AB88-F6336DBC8A86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor", "Roslintor\Roslintor\Roslintor.csproj", "{5CDDA232-4FC8-44DB-AB88-F6336DBC8A86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslintor.CodeFixes", "Roslintor\Roslintor.CodeFixes\Roslintor.CodeFixes.csproj", "{BE00C9D0-C86E-4045-991E-A16335145C4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.CodeFixes", "Roslintor\Roslintor.CodeFixes\Roslintor.CodeFixes.csproj", "{BE00C9D0-C86E-4045-991E-A16335145C4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslintor.Package", "Roslintor\Roslintor.Package\Roslintor.Package.csproj", "{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Package", "Roslintor\Roslintor.Package\Roslintor.Package.csproj", "{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslintor.Test", "Roslintor\Roslintor.Test\Roslintor.Test.csproj", "{E79FA816-511B-442F-B88C-8568914CA62C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Vsix", "Roslintor\Roslintor.Vsix\Roslintor.Vsix.csproj", "{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslintor.Vsix", "Roslintor\Roslintor.Vsix\Roslintor.Vsix.csproj", "{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Tests", "Roslintor\Roslintor.Tests\Roslintor.Tests.csproj", "{DF6501A9-8626-4949-8BA3-6225717F74C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,14 @@ Global
 		{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E79FA816-511B-442F-B88C-8568914CA62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E79FA816-511B-442F-B88C-8568914CA62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E79FA816-511B-442F-B88C-8568914CA62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E79FA816-511B-442F-B88C-8568914CA62C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

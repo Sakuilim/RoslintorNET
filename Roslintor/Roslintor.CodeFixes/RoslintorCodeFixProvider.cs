@@ -56,7 +56,6 @@ namespace Roslintor
             var oldName = identifierToken.Text;
             var newName = MakeFirstLetterLower(oldName);
 
-
             // Get the symbol representing the type to be renamed.
             var semanticModel = await document.GetSemanticModelAsync(cancellationToken);
             var typeSymbol = semanticModel.GetDeclaredSymbol(typeDecl, cancellationToken);

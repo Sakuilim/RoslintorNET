@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8B5VfaMtpmQXNpR4M/jCHfLef2+nF91KiF17dMlf2+9KOdZPr6I3RubDLTpL+2ziRCcsSsO28EvRB6itSNM1mQ==",
+  "dgSpecHash": "bopTru4jEf65a2Fy4QlXMGTXjAhTvA86vcTEKOOgaoInZbr29slbO70FNL60+0dc5MbNw3JLvsnKl3CW12kDjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Test\\Roslintor.Test.csproj",
+  "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Tests\\Roslintor.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marius Milius\\.nuget\\packages\\diffplex\\1.5.0\\diffplex.1.5.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
