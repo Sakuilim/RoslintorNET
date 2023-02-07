@@ -21,4 +21,12 @@
     <EmbeddedResource Update="Resources.resx" Generator="ResXFileCodeGenerator" LastGenOutput="Resources.Designer.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\.editorconfig" />
+  </ItemGroup>
+
 </Project>

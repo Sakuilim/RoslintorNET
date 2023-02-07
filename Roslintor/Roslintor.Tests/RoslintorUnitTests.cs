@@ -11,7 +11,7 @@ namespace Roslintor.Test
     public class RoslintorUnitTest
     {
         [TestMethod]
-        public async Task TestMethod1()
+        public async Task CamelCase_Analyzer_ShouldDetect()
         {
             var test = @"
             using System;
@@ -40,7 +40,7 @@ namespace Roslintor.Test
         }
 
         [TestMethod]
-        public async Task TestMethod2()
+        public async Task CamelCase_CodeFix_ShouldFix()
         {
             var test = @"
             using System;

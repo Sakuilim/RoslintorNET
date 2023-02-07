@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Linq;
-using System.Text.RegularExpressions;
+using System.Reflection;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
-
+using Roslintor.Helper;
 
 namespace Roslintor
 {
@@ -15,8 +14,8 @@ namespace Roslintor
     {
         private const string DiagnosticId = "Roslintor";
         private const string Title = "Rename your method";
-        private const string MessageFormat = "Method '{0}' is not written in camelCase. Consider changing your method name to camelCase";
-        private const string Description = "Change your method name to camelCase";
+        private const string MessageFormat = "Method '{0}' is not written in camelCase. Consider changing your method name to camelCase.";
+        private const string Description = "Change your method name to camelCase.";
 
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(
@@ -28,16 +27,17 @@ namespace Roslintor
            isEnabledByDefault: true,
            description: Description);
 
-        public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get { return ImmutableArray.Create(Rule); } }
+        public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
 
         public override void Initialize(AnalysisContext context)
         {
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
-            context.RegisterSyntaxNodeAction(AnalyzeSymbol, SymbolKind.Method);
-            //context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
-            //context.EnableConcurrentExecution();
-            //context.RegisterCodeBlockAction(CodeBlockAction);
+            context.RegisterSyntaxNodeAction(
+                AnalyzeType,
+                SyntaxKind.ClassDeclaration,
+                SyntaxKind.StructDeclaration,
+                SyntaxKind.RecordStructDeclaration);
         }
 
         private static void CodeBlockAction(CodeBlockAnalysisContext codeBlockContext)
@@ -60,36 +60,22 @@ namespace Roslintor
             }
         }
 
-        private static void AnalyzeSymbol(SyntaxNodeAnalysisContext context)
+        private static void AnalyzeType(SyntaxNodeAnalysisContext context)
         {
-            MethodDeclarationSyntax methodDeclaration = context.Node as MethodDeclarationSyntax;
+            var methodDeclaration = context.Node.DescendantNodes().OfType<MemberDeclarationSyntax>();
 
-            if(methodDeclaration != null)
+            foreach (var item in methodDeclaration)
             {
-                var methodName = methodDeclaration.Identifier.ValueText;
-                if (!IsCamelCase(methodName))
+                var method = item as MethodDeclarationSyntax;
+                if(method != null)
                 {
-                    var diagnostic = Diagnostic.Create(Rule, methodDeclaration.GetLocation(), methodName);
-                    context.ReportDiagnostic(diagnostic);
+                    if (!CamelCaseHelper.IsCamelCase(method.Identifier.Text))
+                    {
+                        var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.Text);
+                        context.ReportDiagnostic(diagnostic);
+                    }
                 }
             }
-
-        }
-
-
-        private static bool IsCamelCase(string name)
-        {
-            if (string.IsNullOrEmpty(name) || char.IsUpper(name[0]))
-            {
-                return false;
-            }
-
-            if (char.IsUpper(name[0]))
-            {
-                return false;
-            }
-
-            return true;
         }
     }
 }
