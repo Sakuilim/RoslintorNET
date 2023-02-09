@@ -29,4 +29,9 @@
     <None Include="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\.editorconfig" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="FormatAnalyzers\" />
+    <Folder Include="SecurityAnalyzers\" />
+  </ItemGroup>
+
 </Project>

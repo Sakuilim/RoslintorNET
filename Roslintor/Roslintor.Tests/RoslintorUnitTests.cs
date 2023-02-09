@@ -2,8 +2,8 @@
 using System;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.NamingAnalyzer,
-    Roslintor.RoslintorCodeFixProvider>;
+    Roslintor.NamingAnalyzers.NamingAnalyzer,
+    Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
 namespace Roslintor.Test
 {
@@ -32,9 +32,7 @@ namespace Roslintor.Test
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("Roslintor").WithLocation(0).WithArguments("MethodName");
-
-            Console.WriteLine(expected);
+            var expected = VerifyCS.Diagnostic("NA01").WithLocation(0).WithArguments("MethodName");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
         }
@@ -80,7 +78,7 @@ namespace Roslintor.Test
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("Roslintor").WithLocation(0).WithArguments("MethodName");
+            var expected = VerifyCS.Diagnostic("NA01").WithLocation(0).WithArguments("MethodName");
 
             await VerifyCS.VerifyCodeFixAsync(test, expected, fixtest);
         }
