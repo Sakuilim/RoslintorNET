@@ -2,12 +2,8 @@
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
-using Roslintor.Helper;
-using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using System.Threading;
 
 namespace Roslintor.NamingAnalyzers
 {
@@ -25,15 +21,6 @@ namespace Roslintor.NamingAnalyzers
         private const string MessageFormat = "Method '{0}' is empty. Consider adding code to your method.";
         private const string Description = "Add code to your method.";
         private const string Category = "Style";
-
-        //private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
-        //    DiagnosticId,
-        //    Title,
-        //    MessageFormat,
-        //    Category,
-        //    DiagnosticSeverity.Warning,
-        //    isEnabledByDefault: true,
-        //    description: Description);
 
         private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
             DiagnosticId,

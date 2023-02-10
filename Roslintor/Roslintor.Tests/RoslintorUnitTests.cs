@@ -5,10 +5,10 @@ using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
     Roslintor.NamingAnalyzers.NamingAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
-namespace Roslintor.Test
+namespace Roslintor.Tests
 {
     [TestClass]
-    public class RoslintorUnitTest
+    public class RoslintorUnitTests
     {
         [TestMethod]
         public async Task CamelCase_Analyzer_ShouldDetect()
