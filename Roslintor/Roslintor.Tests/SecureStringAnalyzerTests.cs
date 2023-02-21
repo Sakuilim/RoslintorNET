@@ -10,16 +10,54 @@ namespace Roslintor.Tests
     public class SecureStringAnalyzerTests
     {
         [TestMethod]
-        public Task SecureStringAnalysis_Should_ReturnStringSecure()
+        public async Task SecureStringAnalysis_Should_ReturnStringSecure()
         {
-            // Method intentionally left empty.
-            throw new NotImplementedException();
+            var test = @"
+            using System;
+            using System.Collections.Generic;
+            using System.Linq;
+            using System.Text;
+            using System.Threading.Tasks;
+            using System.Diagnostics;
+
+            namespace ConsoleApplication1
+            {
+                public class TestClass
+                {   
+                    public void MethodName(string name)
+                    {
+                        string x = ""This string is very safe"";
+                    }    
+                }
+            }";
+
+            await VerifyCS.VerifyAnalyzerAsync(test);
         }
         [TestMethod]
-        public Task SecureStringAnalysis_Should_ReturnStringNotSecure()
+        public async Task SecureStringAnalysis_Should_ReturnStringNotSecure()
         {
-            // Method intentionally left empty.
-            throw new NotImplementedException();
+            var test = @"
+            using System;
+            using System.Collections.Generic;
+            using System.Linq;
+            using System.Text;
+            using System.Threading.Tasks;
+            using System.Diagnostics;
+
+            namespace ConsoleApplication1
+            {
+                public class TestClass
+                {   
+                    public void MethodName(string name)
+                    {
+                        string {|#0:stringVar|} = ""This string is not safe, it contains Password"";
+                    }    
+                }
+            }";
+
+            var expected = VerifyCS.Diagnostic("SSA01").WithLocation(0).WithArguments("stringVar");
+
+            await VerifyCS.VerifyAnalyzerAsync(test, expected);
         }
     }
 }

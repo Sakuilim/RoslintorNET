@@ -12,7 +12,7 @@ namespace Roslintor.NamingAnalyzers
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class SecureStringAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "SA01";
+        public const string DiagnosticId = "SSA01";
         private const string Title = "Use a secure string";
         private const string MessageFormat = "String '{0}' is not a secure variable. Consider changing your method name to be more secure.";
         private const string Description = "Change your variable to be more secure.";
@@ -31,32 +31,30 @@ namespace Roslintor.NamingAnalyzers
 
         public override void Initialize(AnalysisContext context)
         {
-            //context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
-            //context.EnableConcurrentExecution();
-            //context.RegisterSyntaxNodeAction(
-            //    AnalyzeType,
-            //    SyntaxKind.ClassDeclaration,
-            //    SyntaxKind.StructDeclaration,
-            //    SyntaxKind.RecordStructDeclaration);
+            context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
+            context.EnableConcurrentExecution();
+            context.RegisterSyntaxNodeAction(AnalyzeStringLiteral, SyntaxKind.StringLiteralExpression);
         }
 
-        private static void AnalyzeType(SyntaxNodeAnalysisContext context)
+        private static void AnalyzeStringLiteral(SyntaxNodeAnalysisContext context)
         {
-            //    var methoddeclaration = context.node.descendantnodes().oftype<memberdeclarationsyntax>();
+            var literalExpression = (LiteralExpressionSyntax)context.Node;
 
-            //    foreach (var item in methoddeclaration)
-            //    {
-            //        var method = item as methoddeclarationsyntax;
-            //        if (method != null)
-            //        {
-            //            if (!camelcasehelper.iscamelcase(method.identifier.text))
-            //            {
-            //                var diagnostic = diagnostic.create(rule, method.identifier.getlocation(), method.identifier.text);
-            //                context.reportdiagnostic(diagnostic);
-            //            }
-            //        }
-            //    }
-            //}
+            // check if the string contains potentially insecure content
+            if (literalExpression.Token.ValueText.Contains("password")
+                || literalExpression.Token.ValueText.Contains("secret")
+                    || literalExpression.Token.ValueText.Contains("psw")
+                        ||literalExpression.Token.ValueText.Contains("Password"))
+            {
+
+                var variableDeclaration = literalExpression.AncestorsAndSelf().OfType<VariableDeclaratorSyntax>().FirstOrDefault();
+                if (variableDeclaration != null)
+                {
+                    var variableName = variableDeclaration.Identifier.ValueText;
+                    var diagnostic = Diagnostic.Create(Rule, variableDeclaration.Identifier.GetLocation(), variableName);
+                    context.ReportDiagnostic(diagnostic);
+                }
+            }
         }
     }
 }
