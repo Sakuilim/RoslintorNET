@@ -3,16 +3,17 @@
   <metadata>
     <id>Roslintor</id>
     <version>1.0.0</version>
+    <title>Roslintor</title>
     <authors>Marius Milius</authors>
     <developmentDependency>true</developmentDependency>
     <licenseUrl>http://license_url_here_or_delete_this_line/</licenseUrl>
-    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <projectUrl>https://github.com/Sakuilim</projectUrl>
     <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
     <description>Roslintor</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <releaseNotes>Initial release</releaseNotes>
     <copyright>Copyright</copyright>
     <tags>Roslintor, analyzers</tags>
-    <repository url="http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE" />
+    <repository type="git" url="https://github.com/Sakuilim/RoslintorNET" />
   </metadata>
   <files>
     <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Debug\netstandard2.0\Roslintor.dll" target="analyzers\dotnet\cs\Roslintor.dll" />

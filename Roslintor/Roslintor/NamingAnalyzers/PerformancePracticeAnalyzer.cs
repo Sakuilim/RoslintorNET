@@ -1,4 +1,5 @@
-﻿using System.Collections.Immutable;
+﻿using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using System.Reflection;
 using Microsoft.CodeAnalysis;
@@ -47,9 +48,9 @@ namespace Roslintor.NamingAnalyzers
             {
                 var symbolInfo = context.SemanticModel.GetSymbolInfo(memberAccess.Name);
                 if (symbolInfo.Symbol != null &&
-                    symbolInfo.Symbol.ContainingType.SpecialType == SpecialType.System_Collections_Generic_IList_T)
+                    symbolInfo.Symbol.ContainingType.ToString().Contains("System.Collections.Generic.List<"))
                 {
-                    var diagnostic = Diagnostic.Create(Rule, memberAccess.Name.GetLocation());
+                    var diagnostic = Diagnostic.Create(Rule, memberAccess.Name.GetLocation(), memberAccess.Name);
                     context.ReportDiagnostic(diagnostic);
                 }
             }

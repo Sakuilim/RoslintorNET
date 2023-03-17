@@ -12,18 +12,22 @@
     <PackageVersion>1.0.0.0</PackageVersion>
     <Authors>Marius Milius</Authors>
     <PackageLicenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</PackageLicenseUrl>
-    <PackageProjectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Sakuilim</PackageProjectUrl>
     <PackageIconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</PackageIconUrl>
-    <RepositoryUrl>http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Sakuilim/RoslintorNET</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>Roslintor</Description>
-    <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <Copyright>Copyright</Copyright>
     <PackageTags>Roslintor, analyzers</PackageTags>
     <DevelopmentDependency>true</DevelopmentDependency>
     <NoPackageAnalysis>true</NoPackageAnalysis>
 
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
+
+    <RepositoryType>git</RepositoryType>
+
+    <Title>Roslintor</Title>
   </PropertyGroup>
 
   <ItemGroup>

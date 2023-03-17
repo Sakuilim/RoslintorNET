@@ -25,4 +25,8 @@
     <ProjectReference Include="..\Roslintor\Roslintor.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SOLIDAnalyzerTests\" />
+  </ItemGroup>
+
 </Project>

@@ -27,12 +27,11 @@ namespace Roslintor.Tests
             {
                 public class TestClass
                 {   
-                    public void {|#0:MethodName|}(string name)
+                    public void methodName(string name)
                     {
                         Hashtable ht = new Hashtable();
                         
                         ht.Add(""001"", ""MeLOL"");
-
                     }    
                 }
             }";
@@ -60,12 +59,12 @@ namespace Roslintor.Tests
                     {
                         var list = new List<string> { ""foo"", ""bar"", ""baz"" };
                         var searchTerm = ""baz"";
-                        var index = list.IndexOf(searchTerm); // This will trigger a diagnostic because List.IndexOf is less efficient than using a HashSet or Dictionary.
+                        var index = list.{|#0:IndexOf|}(searchTerm); // This will trigger a diagnostic because List.IndexOf is less efficient than using a HashSet or Dictionary.
                     }    
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("PPA01");
+            var expected = VerifyCS.Diagnostic("PPA01").WithLocation(0).WithArguments("IndexOf");
 
             Console.WriteLine(expected);
 
