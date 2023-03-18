@@ -41,7 +41,7 @@ namespace Roslintor.ComplexityAnalyzers
         {
             var methodDeclaration = (MethodDeclarationSyntax)context.Node;
 
-            var complexity = CalculateComplexity(methodDeclaration);
+            var complexity = CyclomaticComplexityHelper.CalculateComplexity(methodDeclaration);
 
             if (complexity >= 6) // Threshold for high complexity
             {
@@ -49,17 +49,6 @@ namespace Roslintor.ComplexityAnalyzers
                 var diagnostic = Diagnostic.Create(Rule, methodDeclaration.Identifier.GetLocation(), methodDeclaration.Identifier.Text);
                 context.ReportDiagnostic(diagnostic);
             }
-        }
-        private static int CalculateComplexity(MethodDeclarationSyntax method)
-        {
-            var decisionPoints = method.DescendantNodes().Count(node => IsDecisionPoint(node));
-            return decisionPoints + 1;
-        }
-        private static bool IsDecisionPoint(SyntaxNode node)
-        {
-            return node.IsKind(SyntaxKind.IfStatement) || node.IsKind(SyntaxKind.ForStatement) ||
-                node.IsKind(SyntaxKind.ForEachStatement) || node.IsKind(SyntaxKind.WhileStatement) ||
-                node.IsKind(SyntaxKind.SwitchStatement) || node.IsKind(SyntaxKind.CaseSwitchLabel);
         }
     }
 }
