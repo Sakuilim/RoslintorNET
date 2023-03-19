@@ -17,6 +17,8 @@ namespace Roslintor.ComplexityAnalyzers
         private const string MessageFormat = "Method '{0}' cognitive complexity is too high. Consider simplifying your method.";
         private const string Description = "Simplify your method to not be complex.";
 
+        private const int CognitiveComplexityThreshold = 10;
+
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(
            DiagnosticId,
@@ -43,7 +45,7 @@ namespace Roslintor.ComplexityAnalyzers
 
             var cognitiveComplexity = CalculateCognitiveComplexity(method);
 
-            if (cognitiveComplexity > 10)
+            if (cognitiveComplexity > CognitiveComplexityThreshold)
             {
                 var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.Text);
                 context.ReportDiagnostic(diagnostic);

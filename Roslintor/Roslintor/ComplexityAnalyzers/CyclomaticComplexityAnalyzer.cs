@@ -13,16 +13,19 @@ namespace Roslintor.ComplexityAnalyzers
     public class CyclomaticComplexityAnalyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "CA01";
-        private const string Title = "Reduce complexity of this method";
-        private const string MessageFormat = "Method '{0}' complexity is too high. Consider simplifying your method.";
+        private const string Category = "Performance";
+        private const string Title = "Reduce cyclomatic complexity of this method";
+        private const string MessageFormat = "Method '{0}' cyclomatic complexity is too high. Consider simplifying your method.";
         private const string Description = "Simplify your method to not be complex.";
+
+        private const int CyclomaticComplexityThreshold = 6;
 
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(
            DiagnosticId,
            Title,
            MessageFormat,
-           "Performance",
+           Category,
            DiagnosticSeverity.Warning,
            isEnabledByDefault: true,
            description: Description);
@@ -43,7 +46,7 @@ namespace Roslintor.ComplexityAnalyzers
 
             var complexity = CyclomaticComplexityHelper.CalculateComplexity(methodDeclaration);
 
-            if (complexity >= 6) // Threshold for high complexity
+            if (complexity >= CyclomaticComplexityThreshold) // Threshold for high complexity
             {
                 // Report diagnostic
                 var diagnostic = Diagnostic.Create(Rule, methodDeclaration.Identifier.GetLocation(), methodDeclaration.Identifier.Text);

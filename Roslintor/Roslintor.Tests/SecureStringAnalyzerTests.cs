@@ -2,8 +2,9 @@
 using System.Threading.Tasks;
 using System;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.NamingAnalyzers.SecureStringAnalyzer,
+    Roslintor.SecurityAnalyzers.SecureStringAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
+
 namespace Roslintor.Tests
 {
     [TestClass]

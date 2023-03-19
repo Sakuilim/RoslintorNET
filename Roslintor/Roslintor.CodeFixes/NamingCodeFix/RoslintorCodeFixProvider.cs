@@ -18,7 +18,7 @@ namespace Roslintor.NamingCodeFix
     {
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {
-            get { return ImmutableArray.Create(NamingAnalyzer.DiagnosticId); }
+            get { return ImmutableArray.Create(CamelCaseAnalyzer.DiagnosticId); }
         }
 
         public sealed override FixAllProvider GetFixAllProvider()

@@ -5,13 +5,13 @@ using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
     Roslintor.ComplexityAnalyzers.CyclomaticComplexityAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
-namespace Roslintor.Tests.ComplexityAnalyzers
+namespace Roslintor.Tests
 {
     [TestClass]
     public class ComplexityAnalyzerTests
     {
         [TestMethod]
-        public async Task ComplexityAnalysis_Should_ReturnComplexityLevelGood()
+        public async Task CyclomaticComplexityAnalysis_Should_ReturnCyclomaticComplexityLevelGood()
         {
             var test = @"
             using System;
@@ -35,7 +35,7 @@ namespace Roslintor.Tests.ComplexityAnalyzers
             await VerifyCS.VerifyAnalyzerAsync(test);
         }
         [TestMethod]
-        public async Task ComplexityAnalysis_Should_ReturnComplexityLevelTooHigh()
+        public async Task CyclomaticComplexityAnalysis_Should_ReturnCyclomaticComplexityLevelTooHigh()
         {
             var test = @"
             using System;

@@ -12,6 +12,7 @@ namespace Roslintor.ComplexityAnalyzers
     public class MaintainabilityAnalyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "MA01";
+        private const string Category = "Maintainability";
         private const string Title = "Reduce complexity of this method";
         private const string MessageFormat = "Method '{0}' complexity is too high. Consider simplifying your method.";
         private const string Description = "Simplify your method to not be complex.";
@@ -21,7 +22,7 @@ namespace Roslintor.ComplexityAnalyzers
            DiagnosticId,
            Title,
            MessageFormat,
-           "Maintainability",
+           Category,
            DiagnosticSeverity.Warning,
            isEnabledByDefault: true,
            description: Description);
