@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Roslintor</id>
+    <version>1.0.0</version>
+    <title>Roslintor</title>
+    <authors>Marius Milius</authors>
+    <developmentDependency>true</developmentDependency>
+    <licenseUrl>http://license_url_here_or_delete_this_line/</licenseUrl>
+    <projectUrl>https://github.com/Sakuilim</projectUrl>
+    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
+    <description>Roslintor</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright</copyright>
+    <tags>Roslintor, analyzers</tags>
+    <repository type="git" url="https://github.com/Sakuilim/RoslintorNET" />
+  </metadata>
+  <files>
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.dll" target="analyzers\dotnet\cs\Roslintor.dll" />
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.CodeFixes.dll" target="analyzers\dotnet\cs\Roslintor.CodeFixes.dll" />
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\tools\install.ps1" target="tools\install.ps1" />
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\tools\uninstall.ps1" target="tools\uninstall.ps1" />
+  </files>
+</package>

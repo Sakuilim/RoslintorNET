@@ -254,9 +254,7 @@ c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bi
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.ProtectedData.dll
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.CodeFixes.dll
-c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.dll
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.CodeFixes.pdb
-c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.pdb
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Debug\netcoreapp3.1\Roslintor.Tests.csproj.AssemblyReference.cache
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Debug\netcoreapp3.1\Roslintor.Tests.csproj.SuggestedBindingRedirects.cache
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Debug\netcoreapp3.1\Roslintor.Tests.dll.config
@@ -268,3 +266,6 @@ c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\ob
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Debug\netcoreapp3.1\Roslintor.Tests.dll
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Debug\netcoreapp3.1\Roslintor.Tests.pdb
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Debug\netcoreapp3.1\Roslintor.Tests.genruntimeconfig.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.Analyzers.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.Analyzers.pdb

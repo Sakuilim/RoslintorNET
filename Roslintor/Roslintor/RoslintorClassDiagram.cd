@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Roslintor.ComplexityAnalyzers.CognitiveComplexityAnalyzer" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAgQUAgAAAAAAAAAAAAgAgAAAQAAAAAAAA=</HashCode>
+      <FileName>ComplexityAnalyzers\CognitiveComplexityAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.ComplexityAnalyzers.CyclomaticComplexityAnalyzer" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAgAUAgAAAAAAAAAABAgAAAAAQAAAAACAA=</HashCode>
+      <FileName>ComplexityAnalyzers\CyclomaticComplexityAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.ComplexityAnalyzers.NestingLevelAnalyzer" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAgAUAgAAAAAAAAAAAAgAAACAQAAAAACAA=</HashCode>
+      <FileName>FormatAnalyzers\NestingLevelAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.ComplexityAnalyzers.MaintainabilityAnalyzer" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAUAgAUAgAAAAAAAAAAAAgAAAAAQAAAAACAA=</HashCode>
+      <FileName>MaintainabilityAnalyzers\MaintainabilityAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.ComplexityAnalyzers.ArgumentCountAnalyzer" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAgAUAgAAAAAAAAAAAAgAAAAAQgAAAACAA=</HashCode>
+      <FileName>ParameterAnalyzers\ArgumentCountAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.Helper.CamelCaseHelper" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\CamelCaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.Helper.CognitiveComplexityWalker" Collapsed="true">
+    <Position X="13.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAEAgAQAAAQIAAAAgAADAAAACJAAAAABAAAABA=</HashCode>
+      <FileName>Helpers\CognitiveComplexityWalker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.Helper.CyclomaticComplexityHelper" Collapsed="true">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\CyclomaticComplexityHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.Helper.HalsteadVolumeVisitor" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\HalsteadVolumeVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.NamingAnalyzers.MethodSize80Analyzer" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAgAUAgAAAAAAAAAAAAgAAAAAQAAAAACAA=</HashCode>
+      <FileName>NamingAnalyzers\MethodSize80Analyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.NamingAnalyzers.MethodSizeAnalyzer" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAgAUAgAAAAAAAAAAAAgAAAAAQAAAAACAA=</HashCode>
+      <FileName>NamingAnalyzers\MethodSizeAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.PerformanceAnalyzers.PerformancePracticeAnalyzer" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAEAgAUAgAAAgAAAAAAAAgAAAAAQAAAAACAA=</HashCode>
+      <FileName>PerformanceAnalyzers\PerformancePracticeAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.SecurityAnalyzers.SecureStringAnalyzer" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAgAUAgAEAAAAAAAAAAgAAAAAQAAAAACAA=</HashCode>
+      <FileName>SecurityAnalyzers\SecureStringAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Roslintor.Analyzers.Resources" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker" Collapsed="true">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

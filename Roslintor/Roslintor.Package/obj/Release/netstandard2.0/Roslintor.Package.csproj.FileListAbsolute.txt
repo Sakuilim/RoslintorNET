@@ -1,0 +1,17 @@
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\tools\install.ps1
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\tools\uninstall.ps1
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.Package.deps.json
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.Package.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.Package.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.Analyzers.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.CodeFixes.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.CodeFixes.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\bin\Release\netstandard2.0\Roslintor.Analyzers.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\obj\Release\netstandard2.0\Roslintor.Package.csproj.AssemblyReference.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\obj\Release\netstandard2.0\Roslintor.Package.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\obj\Release\netstandard2.0\Roslintor.Package.AssemblyInfoInputs.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\obj\Release\netstandard2.0\Roslintor.Package.AssemblyInfo.cs
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\obj\Release\netstandard2.0\Roslintor.Package.csproj.CoreCompileInputs.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\obj\Release\netstandard2.0\Roslintor.Package.csproj.CopyComplete
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\obj\Release\netstandard2.0\Roslintor.Package.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Package\obj\Release\netstandard2.0\Roslintor.Package.pdb

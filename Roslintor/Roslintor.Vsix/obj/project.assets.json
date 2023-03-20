@@ -44,13 +44,13 @@
           "build/Microsoft.CodeAnalysis.BannedApiAnalyzers.targets": {}
         }
       },
-      "Microsoft.CodeAnalysis.Common/4.4.0": {
+      "Microsoft.CodeAnalysis.Common/4.5.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.3.3",
           "System.Collections.Immutable": "6.0.0",
           "System.Memory": "4.5.5",
-          "System.Reflection.Metadata": "5.0.0",
+          "System.Reflection.Metadata": "6.0.1",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Text.Encoding.CodePages": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
@@ -107,10 +107,10 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp/4.4.0": {
+      "Microsoft.CodeAnalysis.CSharp/4.5.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "[4.4.0]"
+          "Microsoft.CodeAnalysis.Common": "[4.5.0]"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll": {
@@ -164,13 +164,13 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Workspaces/4.4.0": {
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/4.5.0": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.CodeAnalysis.CSharp": "[4.4.0]",
-          "Microsoft.CodeAnalysis.Common": "[4.4.0]",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "[4.4.0]"
+          "Microsoft.CodeAnalysis.CSharp": "[4.5.0]",
+          "Microsoft.CodeAnalysis.Common": "[4.5.0]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[4.5.0]"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
@@ -224,14 +224,15 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.Workspaces.Common/4.4.0": {
+      "Microsoft.CodeAnalysis.Workspaces.Common/4.5.0": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
           "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
-          "Microsoft.CodeAnalysis.Common": "[4.4.0]",
+          "Microsoft.CodeAnalysis.Common": "[4.5.0]",
           "System.Composition": "6.0.0",
-          "System.IO.Pipelines": "6.0.3"
+          "System.IO.Pipelines": "6.0.3",
+          "System.Threading.Channels": "6.0.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Workspaces.dll": {
@@ -301,18 +302,18 @@
           "build/Microsoft.VisualStudio.Threading.Analyzers.targets": {}
         }
       },
-      "Microsoft.VSSDK.BuildTools/17.4.2120": {
+      "Microsoft.VSSDK.BuildTools/17.5.4065": {
         "type": "package",
         "dependencies": {
           "Microsoft.VisualStudio.SDK.Analyzers": "16.10.10",
-          "Microsoft.VsSDK.CompatibilityAnalyzer": "17.4.2120-gbd045140"
+          "Microsoft.VsSDK.CompatibilityAnalyzer": "17.5.4065"
         },
         "build": {
           "build/Microsoft.VSSDK.BuildTools.props": {},
           "build/Microsoft.VSSDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.VsSDK.CompatibilityAnalyzer/17.4.2120-gbd045140": {
+      "Microsoft.VsSDK.CompatibilityAnalyzer/17.5.4065": {
         "type": "package",
         "frameworkAssemblies": [
           "System.IO.Compression",
@@ -503,16 +504,11 @@
           }
         }
       },
-      "System.Reflection.Metadata/5.0.0": {
+      "System.Reflection.Metadata/6.0.1": {
         "type": "package",
         "dependencies": {
-          "System.Collections.Immutable": "5.0.0"
+          "System.Collections.Immutable": "6.0.0"
         },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "mscorlib"
-        ],
         "compile": {
           "lib/net461/System.Reflection.Metadata.dll": {
             "related": ".xml"
@@ -563,6 +559,22 @@
           }
         }
       },
+      "System.Threading.Channels/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/System.Threading.Channels.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Channels.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -582,25 +594,25 @@
           }
         }
       },
-      "*Roslintor.csproj*/1.0.0": {
+      "Roslintor.Analyzers/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.4.0"
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
         },
         "compile": {
-          "bin/placeholder/*Roslintor.csproj*.dll": {}
+          "bin/placeholder/Roslintor.Analyzers.dll": {}
         },
         "runtime": {
-          "bin/placeholder/*Roslintor.csproj*.dll": {}
+          "bin/placeholder/Roslintor.Analyzers.dll": {}
         }
       },
       "Roslintor.CodeFixes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "*Roslintor.csproj*": "1.0.0",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.4.0"
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
+          "Roslintor.Analyzers": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
@@ -974,10 +986,10 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.CodeAnalysis.Common/4.4.0": {
-      "sha512": "JfHupS/B7Jb5MZoYkFFABn3mux0wQgxi2D8F/rJYZeRBK2ZOyk7TjQ2Kq9rh6W/DCh0KNbbSbn5qoFar+ueHqw==",
+    "Microsoft.CodeAnalysis.Common/4.5.0": {
+      "sha512": "lwAbIZNdnY0SUNoDmZHkVUwLO8UyNnyyh1t/4XsbFxi4Ounb3xszIYZaWhyj5ZjyfcwqwmtMbE7fUTVCqQEIdQ==",
       "type": "package",
-      "path": "microsoft.codeanalysis.common/4.4.0",
+      "path": "microsoft.codeanalysis.common/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1015,14 +1027,14 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
-        "microsoft.codeanalysis.common.4.4.0.nupkg.sha512",
+        "microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
         "microsoft.codeanalysis.common.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.CSharp/4.4.0": {
-      "sha512": "eD2w0xHRoaqK07hjlOKGR9eLNy3nimiGNeCClNax1NDgS/+DBtBqCjXelOa+TNy99kIB3nHhUqDmr46nDXy/RQ==",
+    "Microsoft.CodeAnalysis.CSharp/4.5.0": {
+      "sha512": "cM59oMKAOxvdv76bdmaKPy5hfj+oR+zxikWoueEB7CwTko7mt9sVKZI8Qxlov0C/LuKEG+WQwifepqL3vuTiBQ==",
       "type": "package",
-      "path": "microsoft.codeanalysis.csharp/4.4.0",
+      "path": "microsoft.codeanalysis.csharp/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1060,14 +1072,14 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "microsoft.codeanalysis.csharp.4.4.0.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
         "microsoft.codeanalysis.csharp.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.CSharp.Workspaces/4.4.0": {
-      "sha512": "ADmI2jcwJP9GgBsVx2l0Bo0v3Hn4hHBg1uJ5zHd230mkO8rUJBLZu2h3tCbpwJMkpAIRtrxuZDD5uNfiyz0Q5Q==",
+    "Microsoft.CodeAnalysis.CSharp.Workspaces/4.5.0": {
+      "sha512": "h74wTpmGOp4yS4hj+EvNzEiPgg/KVs2wmSfTZ81upJZOtPkJsVkgfsgtxxqmAeapjT/vLKfmYV0bS8n5MNVP+g==",
       "type": "package",
-      "path": "microsoft.codeanalysis.csharp.workspaces/4.4.0",
+      "path": "microsoft.codeanalysis.csharp.workspaces/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1105,14 +1117,14 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
-        "microsoft.codeanalysis.csharp.workspaces.4.4.0.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg.sha512",
         "microsoft.codeanalysis.csharp.workspaces.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.Workspaces.Common/4.4.0": {
-      "sha512": "6KzmmTIUU7qInQldcSPaW0nkrO71zlFPhoiabFBhkokEit49rLx4Kr/G3agBchYzirScrXibqgTRQkvx9WcJTw==",
+    "Microsoft.CodeAnalysis.Workspaces.Common/4.5.0": {
+      "sha512": "l4dDRmGELXG72XZaonnOeORyD/T5RpEu5LGHOUIhnv+MmUWDY/m1kWXGwtcgQ5CJ5ynkFiRnIYzTKXYjUs7rbw==",
       "type": "package",
-      "path": "microsoft.codeanalysis.workspaces.common/4.4.0",
+      "path": "microsoft.codeanalysis.workspaces.common/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1150,7 +1162,7 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll",
-        "microsoft.codeanalysis.workspaces.common.4.4.0.nupkg.sha512",
+        "microsoft.codeanalysis.workspaces.common.4.5.0.nupkg.sha512",
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
@@ -1231,10 +1243,10 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.VSSDK.BuildTools/17.4.2120": {
-      "sha512": "r9dsO8ZCKN1dI/gZkxRt4YxXZFfkCGTz0O8s8RodP7v8//hN7EZFAAH3M1wI2F2yCYVhRMK1Qh+arnwWoCeHAA==",
+    "Microsoft.VSSDK.BuildTools/17.5.4065": {
+      "sha512": "fQ7SUit1EDJGN/hFztFTho9IT3BOlU5Ek1O6euXB4r9ZtUmcHN9mufyFCIU6yRPXim8L4k39E4YtJUvsmX4wWA==",
       "type": "package",
-      "path": "microsoft.vssdk.buildtools/17.4.2120",
+      "path": "microsoft.vssdk.buildtools/17.5.4065",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1244,7 +1256,7 @@
         "PackageIcon.png",
         "build/Microsoft.VSSDK.BuildTools.props",
         "build/Microsoft.VSSDK.BuildTools.targets",
-        "microsoft.vssdk.buildtools.17.4.2120.nupkg.sha512",
+        "microsoft.vssdk.buildtools.17.5.4065.nupkg.sha512",
         "microsoft.vssdk.buildtools.nuspec",
         "tools/vssdk/Empty.resx",
         "tools/vssdk/MessagePack.Annotations.dll",
@@ -1350,6 +1362,7 @@
         "tools/vssdk/bin/lib/TraceReloggerLib.dll",
         "tools/vssdk/bin/lib/VsixCommandLine.dll",
         "tools/vssdk/bin/lib/VsixPublisher.exe",
+        "tools/vssdk/bin/lib/vsixpublisher/System.Runtime.CompilerServices.Unsafe.dll",
         "tools/vssdk/bin/x86/CreatePkgDef.exe",
         "tools/vssdk/bin/x86/CreatePkgDef.exe.config",
         "tools/vssdk/bin/x86/VSCTCompress.dll",
@@ -1393,10 +1406,10 @@
         "tools/vssdk/schemas/VSIXManifestSchema.xsd"
       ]
     },
-    "Microsoft.VsSDK.CompatibilityAnalyzer/17.4.2120-gbd045140": {
-      "sha512": "8kBatKbuxsHsuD+6qSUvd0VDzCbJP/UuyEBynGcj4PTKhkoyjOIHmMTvbnKdYHX2d/QYxPwabkQZMwXx0WvYtw==",
+    "Microsoft.VsSDK.CompatibilityAnalyzer/17.5.4065": {
+      "sha512": "2dCaaJ+ReGLxMGJAPmxDtJm1VNxn1Jo0ibJXj1mIrEJ6f8TVtKh03rtx8oGAiOJYVPcEZIqhBbtbgf6Bn619uA==",
       "type": "package",
-      "path": "microsoft.vssdk.compatibilityanalyzer/17.4.2120-gbd045140",
+      "path": "microsoft.vssdk.compatibilityanalyzer/17.5.4065",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1405,7 +1418,7 @@
         "build/Microsoft.VsSDK.CompatibilityAnalyzer.props",
         "build/Microsoft.VsSDK.CompatibilityAnalyzer.targets",
         "license.txt",
-        "microsoft.vssdk.compatibilityanalyzer.17.4.2120-gbd045140.nupkg.sha512",
+        "microsoft.vssdk.compatibilityanalyzer.17.5.4065.nupkg.sha512",
         "microsoft.vssdk.compatibilityanalyzer.nuspec",
         "tools/net472/Microsoft.VisualStudio.Sdk.CompatibilityAnalyzerTasks.dll",
         "tools/net472/VsixCompatibilityAnalyzer.dll",
@@ -1695,28 +1708,27 @@
         "version.txt"
       ]
     },
-    "System.Reflection.Metadata/5.0.0": {
-      "sha512": "5NecZgXktdGg34rh1OenY1rFNDCI8xSjFr+Z4OU4cU06AQHUdRnIIEeWENu3Wl4YowbzkymAIMvi3WyK9U53pQ==",
+    "System.Reflection.Metadata/6.0.1": {
+      "sha512": "III/lNMSn0ZRBuM9m5Cgbiho5j81u0FAEagFX5ta2DKbljZ3T0IpD8j+BIiHQPeKqJppWS9bGEp6JnKnWKze0g==",
       "type": "package",
-      "path": "system.reflection.metadata/5.0.0",
+      "path": "system.reflection.metadata/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Reflection.Metadata.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Reflection.Metadata.dll",
         "lib/net461/System.Reflection.Metadata.xml",
-        "lib/netstandard1.1/System.Reflection.Metadata.dll",
-        "lib/netstandard1.1/System.Reflection.Metadata.xml",
+        "lib/net6.0/System.Reflection.Metadata.dll",
+        "lib/net6.0/System.Reflection.Metadata.xml",
         "lib/netstandard2.0/System.Reflection.Metadata.dll",
         "lib/netstandard2.0/System.Reflection.Metadata.xml",
-        "lib/portable-net45+win8/System.Reflection.Metadata.dll",
-        "lib/portable-net45+win8/System.Reflection.Metadata.xml",
-        "system.reflection.metadata.5.0.0.nupkg.sha512",
+        "system.reflection.metadata.6.0.1.nupkg.sha512",
         "system.reflection.metadata.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -1783,6 +1795,33 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Threading.Channels/6.0.0": {
+      "sha512": "TY8/9+tI0mNaUMgntOxxaq2ndTkdXqLSxvPmas7XEqOlv9lQtB7wLjYGd756lOaO7Dvb5r/WXhluM+0Xe87v5Q==",
+      "type": "package",
+      "path": "system.threading.channels/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Threading.Channels.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Threading.Channels.dll",
+        "lib/net461/System.Threading.Channels.xml",
+        "lib/net6.0/System.Threading.Channels.dll",
+        "lib/net6.0/System.Threading.Channels.xml",
+        "lib/netcoreapp3.1/System.Threading.Channels.dll",
+        "lib/netcoreapp3.1/System.Threading.Channels.xml",
+        "lib/netstandard2.0/System.Threading.Channels.dll",
+        "lib/netstandard2.0/System.Threading.Channels.xml",
+        "lib/netstandard2.1/System.Threading.Channels.dll",
+        "lib/netstandard2.1/System.Threading.Channels.xml",
+        "system.threading.channels.6.0.0.nupkg.sha512",
+        "system.threading.channels.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Threading.Tasks.Extensions/4.5.4": {
       "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "type": "package",
@@ -1820,10 +1859,10 @@
         "version.txt"
       ]
     },
-    "*Roslintor.csproj*/1.0.0": {
+    "Roslintor.Analyzers/1.0.0": {
       "type": "project",
-      "path": "../Roslintor/Roslintor.csproj",
-      "msbuildProject": "../Roslintor/Roslintor.csproj"
+      "path": "../Roslintor/Roslintor.Analyzers.csproj",
+      "msbuildProject": "../Roslintor/Roslintor.Analyzers.csproj"
     },
     "Roslintor.CodeFixes/1.0.0": {
       "type": "project",
@@ -1833,8 +1872,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "*Roslintor.csproj* >= 1.0.0",
-      "Microsoft.VSSDK.BuildTools >= 17.4.2120",
+      "Microsoft.VSSDK.BuildTools >= 17.5.4065",
+      "Roslintor.Analyzers >= 1.0.0",
       "Roslintor.CodeFixes >= 1.0.0"
     ]
   },
@@ -1875,8 +1914,8 @@
             "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj": {
               "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj"
             },
-            "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj": {
-              "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj"
+            "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.Analyzers.csproj": {
+              "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.Analyzers.csproj"
             }
           }
         }
@@ -1894,10 +1933,10 @@
           "Microsoft.VSSDK.BuildTools": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[17.4.2120, )"
+            "version": "[17.5.4065, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj",
-        "projectName": "*Roslintor.csproj*",
+        "projectName": "Roslintor",
         "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.csproj",
         "packagesPath": "C:\\Users\\Marius Milius\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\obj\\",
@@ -53,7 +53,7 @@
             },
             "Microsoft.CodeAnalysis.CSharp": {
               "target": "Package",
-              "version": "[4.4.0, )"
+              "version": "[4.5.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

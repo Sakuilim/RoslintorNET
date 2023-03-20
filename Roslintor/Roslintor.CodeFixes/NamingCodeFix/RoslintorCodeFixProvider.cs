@@ -4,6 +4,7 @@ using Microsoft.CodeAnalysis.CodeFixes;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Rename;
+using Roslintor.ComplexityAnalyzers;
 using Roslintor.NamingAnalyzers;
 using System.Collections.Immutable;
 using System.Composition;
@@ -18,7 +19,7 @@ namespace Roslintor.NamingCodeFix
     {
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {
-            get { return ImmutableArray.Create(CamelCaseAnalyzer.DiagnosticId); }
+            get { return ImmutableArray.Create(NestingLevelAnalyzer.DiagnosticId); }
         }
 
         public sealed override FixAllProvider GetFixAllProvider()

@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Marius Milius")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Sakuilim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Roslintor")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("\r\n     Adding New analyzers, complexity analyzers, maintainability analyzers and " +
+    "etc..\r\n    ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Roslintor.Package")]

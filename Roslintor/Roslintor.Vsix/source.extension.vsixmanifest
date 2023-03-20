@@ -13,7 +13,7 @@
   </Dependencies>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="Roslintor" Path="|Roslintor|"/>
-    <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="Roslintor" Path="|Roslintor|"/>
+    <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="Roslintor.Analyzers" Path="|Roslintor.Analyzers|"/>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="Roslintor.CodeFixes" Path="|Roslintor.CodeFixes|"/>
     <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="Roslintor.CodeFixes" Path="|Roslintor.CodeFixes|"/>
   </Assets>

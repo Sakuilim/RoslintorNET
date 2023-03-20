@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,21 +9,22 @@
 
   <PropertyGroup>
     <PackageId>Roslintor</PackageId>
-    <PackageVersion>1.0.0.0</PackageVersion>
-    <Authors>Marius Milius</Authors>
-    <PackageLicenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/Sakuilim</PackageProjectUrl>
-    <PackageIconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</PackageIconUrl>
+    <PackageVersion>1.0.1.2</PackageVersion>
+    <Authors>Sakuilim</Authors>
+	<PackageProjectUrl>https://github.com/Sakuilim/RoslintorNET</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Sakuilim/RoslintorNET</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>Roslintor</Description>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <Copyright>Copyright</Copyright>
-    <PackageTags>Roslintor, analyzers</PackageTags>
+	<PackageTags>First Version of Analyzers</PackageTags>
     <DevelopmentDependency>true</DevelopmentDependency>
     <NoPackageAnalysis>true</NoPackageAnalysis>
+    <Description>
+     Adding New analyzers, complexity analyzers, maintainability analyzers and etc..
+    </Description>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
-    <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
+	  <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
 
     <RepositoryType>git</RepositoryType>
 
@@ -32,16 +33,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Roslintor.CodeFixes\Roslintor.CodeFixes.csproj" />
-    <ProjectReference Include="..\Roslintor\Roslintor.csproj" />
+    <ProjectReference Include="..\Roslintor\Roslintor.Analyzers.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="tools\*.ps1" CopyToOutputDirectory="PreserveNewest" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <Target Name="_AddAnalyzersToOutput">
     <ItemGroup>
-      <TfmSpecificPackageFile Include="$(OutputPath)\Roslintor.dll" PackagePath="analyzers/dotnet/cs" />
+      <TfmSpecificPackageFile Include="$(OutputPath)\Roslintor.Analyzers.dll" PackagePath="analyzers/dotnet/cs" />
       <TfmSpecificPackageFile Include="$(OutputPath)\Roslintor.CodeFixes.dll" PackagePath="analyzers/dotnet/cs" />
     </ItemGroup>
   </Target>

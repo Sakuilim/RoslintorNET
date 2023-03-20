@@ -78,7 +78,7 @@ namespace Roslintor.Tests
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("FA01").WithLocation(0).WithArguments("MethodName", "3");
+            var expected = VerifyCS.Diagnostic("FA01").WithLocation(0).WithArguments("MethodName", "8");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
 
