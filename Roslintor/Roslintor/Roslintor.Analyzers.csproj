@@ -31,7 +31,6 @@
 
   <ItemGroup>
     <Folder Include="ModularityAnalyzers\CouplingAnalyzers\" />
-    <Folder Include="ModularityAnalyzers\CohesionAnalyzers\" />
   </ItemGroup>
 
 </Project>

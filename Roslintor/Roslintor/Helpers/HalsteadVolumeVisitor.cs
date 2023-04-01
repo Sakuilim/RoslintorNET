@@ -3,7 +3,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using System.Collections.Generic;
 using Microsoft.CodeAnalysis;
 
-namespace Roslintor.Helper
+namespace Roslintor.Analyzers.Helpers
 {
     public static class HalsteadVolumeVisitor
     {

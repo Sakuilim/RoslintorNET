@@ -3,7 +3,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis;
 using System.Linq;
 
-namespace Roslintor.Helper
+namespace Roslintor.Analyzers.Helpers
 {
     public static class CyclomaticComplexityHelper
     {

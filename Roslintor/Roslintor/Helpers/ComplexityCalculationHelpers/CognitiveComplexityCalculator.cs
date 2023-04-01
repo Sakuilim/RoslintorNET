@@ -1,5 +1,4 @@
 ﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Roslintor.Helper;
 
 namespace Roslintor.Analyzers.Helpers.ComplexityCalculationHelpers
 {

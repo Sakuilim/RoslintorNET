@@ -2,7 +2,7 @@
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Linq;
 
-namespace Roslintor.Helper
+namespace Roslintor.Analyzers.Helpers
 {
     public class CognitiveComplexityWalker : CSharpSyntaxWalker
     {

@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Roslintor.ComplexityAnalyzers
+namespace Roslintor.Analyzers.ParameterAnalyzers
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class ArgumentCountAnalyzer : DiagnosticAnalyzer

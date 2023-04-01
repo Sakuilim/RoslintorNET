@@ -1,9 +1,8 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Testing.MSTest;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.NamingAnalyzers.MethodSizeAnalyzer,
+    Roslintor.Analyzers.NamingAnalyzers.MethodSizeAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
 namespace Roslintor.Tests

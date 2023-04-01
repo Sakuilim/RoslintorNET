@@ -1,11 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.ComplexityAnalyzers.ArgumentCountAnalyzer,
+    Roslintor.Analyzers.ParameterAnalyzers.ArgumentCountAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
-namespace Roslintor.Tests
+namespace Roslintor.Tests.ParameterAnalyzerTests
 {
     [TestClass]
     public class ArgumentCountAnalyzerTests

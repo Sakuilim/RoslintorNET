@@ -4,7 +4,7 @@ using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
     Roslintor.Analyzers.MaintainabilityAnalyzers.Method.MethodMaintainabilityAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
-namespace Roslintor.Tests.MaintainabilityAnalyzerTests.Method
+namespace Roslintor.Tests.MaintainabilityAnalyzerTests
 {
     [TestClass]
     public class MethodMaintainabilityAnalyzerTests

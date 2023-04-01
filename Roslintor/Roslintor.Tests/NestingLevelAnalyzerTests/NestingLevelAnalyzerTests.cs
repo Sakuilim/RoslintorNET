@@ -1,11 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.ComplexityAnalyzers.NestingLevelAnalyzer,
+    Roslintor.Analyzers.FormatAnalyzers.NestingLevelAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
-namespace Roslintor.Tests
+namespace Roslintor.Tests.NestingLevelAnalyzerTests
 {
     [TestClass]
     public class NestingLevelAnalyzerTests

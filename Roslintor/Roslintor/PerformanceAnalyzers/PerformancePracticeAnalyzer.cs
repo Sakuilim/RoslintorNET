@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Roslintor.PerformanceAnalyzers
+namespace Roslintor.Analyzers.PerformanceAnalyzers
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class PerformancePracticeAnalyzer : DiagnosticAnalyzer

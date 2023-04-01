@@ -1,11 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
     Roslintor.Analyzers.ComplexityAnalyzers.Method.MethodCognitiveComplexityAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
-namespace Roslintor.Tests.ComplexityAnalyzerTests.Method
+namespace Roslintor.Tests.ComplexityAnalyzerTests
 {
     [TestClass]
     public class MethodCognitiveAnalyzerTests

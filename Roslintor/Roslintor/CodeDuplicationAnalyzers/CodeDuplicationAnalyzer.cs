@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Roslintor.ComplexityAnalyzers
+namespace Roslintor.Analyzers.CodeDuplicationAnalyzers
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class CodeDuplicationAnalyzer : DiagnosticAnalyzer
@@ -23,7 +23,7 @@ namespace Roslintor.ComplexityAnalyzers
            MessageFormat,
            Category,
            DiagnosticSeverity.Warning,
-           isEnabledByDefault: false,
+           isEnabledByDefault: true,
            description: Description);
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
@@ -50,7 +50,7 @@ namespace Roslintor.ComplexityAnalyzers
                 {
                     // Report a diagnostic for the method
                     var otherMethod = (MethodDeclarationSyntax)otherTree.GetRoot().DescendantNodes().First(n => n is MethodDeclarationSyntax);
-                    context.ReportDiagnostic(Diagnostic.Create(Rule, method.GetLocation(), otherMethod.Identifier));
+                    context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), otherMethod.Identifier));
                 }
             }
         }
