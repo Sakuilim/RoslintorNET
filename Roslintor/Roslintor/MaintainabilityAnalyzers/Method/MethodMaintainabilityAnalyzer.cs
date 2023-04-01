@@ -1,15 +1,14 @@
 ﻿using System.Collections.Immutable;
-using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 using Roslintor.Helper;
 
-namespace Roslintor.ComplexityAnalyzers
+namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Method
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
-    public class MaintainabilityAnalyzer : DiagnosticAnalyzer
+    public class MethodMaintainabilityAnalyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "MA01";
         private const string Category = "Maintainability";
@@ -52,7 +51,7 @@ namespace Roslintor.ComplexityAnalyzers
         }
         private static double CalculateMI(double halsteadVolume, int cyclomaticComplexity, int linesOfCode)
         {
-            return 171 - (5.2 * System.Math.Log(halsteadVolume)) - (0.23 * cyclomaticComplexity) - (16.2 * System.Math.Log(linesOfCode));
+            return 171 - 5.2 * System.Math.Log(halsteadVolume) - 0.23 * cyclomaticComplexity - 16.2 * System.Math.Log(linesOfCode);
         }
     }
 }

@@ -9,7 +9,7 @@
 
   <PropertyGroup>
     <PackageId>Roslintor</PackageId>
-    <PackageVersion>1.0.1.2</PackageVersion>
+    <PackageVersion>1.0.1.3</PackageVersion>
     <Authors>Sakuilim</Authors>
 	<PackageProjectUrl>https://github.com/Sakuilim/RoslintorNET</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Sakuilim/RoslintorNET</RepositoryUrl>
@@ -20,7 +20,7 @@
     <DevelopmentDependency>true</DevelopmentDependency>
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <Description>
-     Adding New analyzers, complexity analyzers, maintainability analyzers and etc..
+        Update for 1.0.1.3 Roslintor analyzer
     </Description>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 

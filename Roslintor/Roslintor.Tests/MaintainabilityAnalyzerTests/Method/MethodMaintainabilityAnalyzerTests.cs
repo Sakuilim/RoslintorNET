@@ -1,17 +1,16 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.ComplexityAnalyzers.MaintainabilityAnalyzer,
+    Roslintor.Analyzers.MaintainabilityAnalyzers.Method.MethodMaintainabilityAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
 
-namespace Roslintor.Tests
+namespace Roslintor.Tests.MaintainabilityAnalyzerTests.Method
 {
     [TestClass]
-    public class MaintainabilityAnalyzerTests
+    public class MethodMaintainabilityAnalyzerTests
     {
         [TestMethod]
-        public async Task MaintainabilityIndexAnalysis_Should_ReturnMaintainabilityIndexLevelGood()
+        public async Task MethodMaintainabilityIndexAnalysis_Should_ReturnMethodMaintainabilityIndexLevelGood()
         {
             var test = @"
             using System;
@@ -35,7 +34,7 @@ namespace Roslintor.Tests
             await VerifyCS.VerifyAnalyzerAsync(test);
         }
         [TestMethod]
-        public async Task MaintainabilityIndexAnalysis_Should_ReturnMaintainabilityIndexLevelTooLow()
+        public async Task MethodMaintainabilityIndexAnalysis_Should_ReturnMethodMaintainabilityIndexLevelTooLow()
         {
             var test = @"
             using System;

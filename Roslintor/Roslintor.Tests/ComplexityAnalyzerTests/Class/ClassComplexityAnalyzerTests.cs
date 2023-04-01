@@ -11,7 +11,7 @@ namespace Roslintor.Tests.ComplexityAnalyzerTests.Class
     public class ClassComplexityAnalyzerTests
     {
         [TestMethod]
-        public async Task CyclomaticComplexityAnalysis_Should_ReturnCyclomaticComplexityLevelGood()
+        public async Task ClassCyclomaticComplexityAnalysis_Should_ReturnClassCyclomaticComplexityLevelGood()
         {
             var test = @"
             using System;
@@ -35,7 +35,7 @@ namespace Roslintor.Tests.ComplexityAnalyzerTests.Class
             await VerifyCS.VerifyAnalyzerAsync(test);
         }
         [TestMethod]
-        public async Task CyclomaticComplexityAnalysis_Should_ReturnCyclomaticComplexityLevelTooHigh()
+        public async Task ClassCyclomaticComplexityAnalysis_Should_ReturnClassCyclomaticComplexityLevelTooHigh()
         {
             var test = @"
             using System;

@@ -11,12 +11,6 @@ namespace Roslintor.NamingAnalyzers
     public class MethodSizeAnalyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "MSA02";
-
-        // You can change these strings in the Resources.resx file. If you do not want your analyzer to be localize-able, you can use regular strings for Title and MessageFormat.
-        // See https://github.com/dotnet/roslyn/blob/main/docs/analyzers/Localizing%20Analyzers.md for more on localization
-        //private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.AnalyzerTitle), Resources.ResourceManager, typeof(Resources));
-        //private static readonly LocalizableString MessageFormat = new LocalizableResourceString(nameof(Resources.AnalyzerMessageFormat), Resources.ResourceManager, typeof(Resources));
-        //private static readonly LocalizableString Description = new LocalizableResourceString(nameof(Resources.AnalyzerDescription), Resources.ResourceManager, typeof(Resources));
         private const string Title = "Empty method";
         private const string MessageFormat = "Method '{0}' is empty. Consider adding code to your method.";
         private const string Description = "Add code to your method.";

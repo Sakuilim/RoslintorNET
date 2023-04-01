@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
-using System;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
     Roslintor.SecurityAnalyzers.SecureStringAnalyzer,
     Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;

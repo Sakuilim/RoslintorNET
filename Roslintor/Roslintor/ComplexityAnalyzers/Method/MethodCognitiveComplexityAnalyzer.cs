@@ -1,11 +1,9 @@
 ﻿using System.Collections.Immutable;
-using System.Linq;
-using System.Reflection;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
-using Roslintor.Helper;
+using Roslintor.Analyzers.Helpers.ComplexityCalculationHelpers;
 
 namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
 {
@@ -16,6 +14,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
         private const string Title = "Reduce cognitive complexity of this method";
         private const string MessageFormat = "Method '{0}' cognitive complexity is too high. Consider simplifying your method.";
         private const string Description = "Simplify your method to not be complex.";
+        private const string Category = "Performance";
 
         private const int CognitiveComplexityThreshold = 10;
 
@@ -24,7 +23,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
            DiagnosticId,
            Title,
            MessageFormat,
-           "Performance",
+           Category,
            DiagnosticSeverity.Warning,
            isEnabledByDefault: true,
            description: Description);
@@ -43,28 +42,13 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
         {
             var method = (MethodDeclarationSyntax)context.Node;
 
-            var cognitiveComplexity = CalculateCognitiveComplexity(method);
+            var cognitiveComplexity = CognitiveComplexityCalculator.CalculateCognitiveComplexity(method);
 
             if (cognitiveComplexity > CognitiveComplexityThreshold)
             {
                 var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.Text);
                 context.ReportDiagnostic(diagnostic);
             }
-        }
-
-        private static int CalculateCognitiveComplexity(MethodDeclarationSyntax method)
-        {
-            var cognitiveComplexity = 0;
-
-            var walker = new CognitiveComplexityWalker();
-            walker.Visit(method.Body);
-
-            cognitiveComplexity += walker.NestingDepth;
-            cognitiveComplexity += walker.ControlFlowBranches;
-            cognitiveComplexity += walker.LogicalBranches;
-            cognitiveComplexity += walker.CaseStatements;
-
-            return cognitiveComplexity;
         }
     }
 }

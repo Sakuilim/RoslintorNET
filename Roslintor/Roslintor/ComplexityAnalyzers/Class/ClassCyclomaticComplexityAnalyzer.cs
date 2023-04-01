@@ -1,6 +1,4 @@
 ﻿using System.Collections.Immutable;
-using System.Linq;
-using System.Reflection;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -13,9 +11,9 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Class
     public class ClassCyclomaticComplexityAnalyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "CA04";
-        private const string Category = "Performance";
         private const string Title = "Reduce cyclomatic complexity of this class";
         private const string MessageFormat = "Class '{0}' cyclomatic complexity is too high. Consider simplifying your class.";
+        private const string Category = "Performance";
         private const string Description = "Simplify your class to not be complex.";
 
         private const int CyclomaticComplexityThreshold = 25;

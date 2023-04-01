@@ -14,8 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sakuilim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("\r\n     Adding New analyzers, complexity analyzers, maintainability analyzers and " +
-    "etc..\r\n    ")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("\r\n        Update for 1.0.1.3 Roslintor analyzer\r\n    ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Roslintor.Package")]

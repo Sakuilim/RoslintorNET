@@ -11,7 +11,7 @@ namespace Roslintor.Tests.ComplexityAnalyzerTests.Class
     public class ClassCognitiveAnalyzerTests
     {
         [TestMethod]
-        public async Task CognitiveComplexityAnalysis_Should_ReturnCognitiveComplexityLevelGood()
+        public async Task ClassCognitiveComplexityAnalysis_Should_ReturnClassCognitiveComplexityLevelGood()
         {
             var test = @"
             using System;
@@ -35,7 +35,7 @@ namespace Roslintor.Tests.ComplexityAnalyzerTests.Class
             await VerifyCS.VerifyAnalyzerAsync(test);
         }
         [TestMethod]
-        public async Task CognitiveComplexityAnalysis_Should_ReturnCognitiveComplexityLevelTooHigh()
+        public async Task ClassCognitiveComplexityAnalysis_Should_ReturnClassCognitiveComplexityLevelTooHigh()
         {
             var test = @"
             using System;
