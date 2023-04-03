@@ -5,12 +5,12 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Roslintor.Analyzers.ModularityAnalyzers.CohesionAnalyzers
+namespace Roslintor.Analyzers.ModularityAnalyzers
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class CohesionAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "CO01";
+        public const string DiagnosticId = "MA02";
         private const string Category = "Performance";
         private const string Title = "Low cohesion detected";
         private const string MessageFormat = "The method '{0}' has an unused parameter. Consider refactoring the class to improve cohesion.";
@@ -23,7 +23,7 @@ namespace Roslintor.Analyzers.ModularityAnalyzers.CohesionAnalyzers
            MessageFormat,
            Category,
            DiagnosticSeverity.Warning,
-           isEnabledByDefault: false,
+           isEnabledByDefault: true,
            description: Description);
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
@@ -45,7 +45,7 @@ namespace Roslintor.Analyzers.ModularityAnalyzers.CohesionAnalyzers
             if (unusedParameters.Any())
             {
                 // Report a diagnostic for the method
-                context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier));
+                context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.ParameterList.Parameters));
             }
         }
     }

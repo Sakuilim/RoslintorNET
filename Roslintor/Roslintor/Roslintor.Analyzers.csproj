@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ModularityAnalyzers\CouplingAnalyzers\" />
+    <Folder Include="NamingAnalyzers\ClassSizeAnalyzers\" />
   </ItemGroup>
 
 </Project>
