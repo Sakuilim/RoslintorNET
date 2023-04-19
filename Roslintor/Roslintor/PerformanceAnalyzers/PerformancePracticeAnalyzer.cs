@@ -1,4 +1,5 @@
-﻿using System.Collections.Immutable;
+﻿using System.Collections.Generic;
+using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -31,37 +32,23 @@ namespace Roslintor.Analyzers.PerformanceAnalyzers
         {
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
-            context.RegisterSyntaxNodeAction(AnalyzeSyntaxNode, SyntaxKind.InvocationExpression);
+            context.RegisterSyntaxNodeAction(AnalyzeListUsage, SyntaxKind.InvocationExpression);
         }
-
-        private void AnalyzeSyntaxNode(SyntaxNodeAnalysisContext context)
+        private static void AnalyzeListUsage(SyntaxNodeAnalysisContext context)
         {
-            var invocation = context.Node as InvocationExpressionSyntax;
+            var invocation = (InvocationExpressionSyntax)context.Node;
 
-            if (invocation != null &&
-                invocation.Expression is MemberAccessExpressionSyntax memberAccess &&
-                memberAccess.Name.Identifier.ValueText.Equals("IndexOf"))
+            // Check if the method invoked is List<T>.Contains
+            if (invocation.Expression is MemberAccessExpressionSyntax memberAccess
+                && memberAccess.Name.Identifier.Text == nameof(List<object>.Contains)
+                && context.SemanticModel.GetSymbolInfo(memberAccess).Symbol is IMethodSymbol methodSymbol
+                && methodSymbol.ContainingType.Name.StartsWith("List"))
             {
-                var symbolInfo = context.SemanticModel.GetSymbolInfo(memberAccess.Name);
-                if (symbolInfo.Symbol != null &&
-                    symbolInfo.Symbol.ContainingType.ToString().Contains("System.Collections.Generic.List<"))
-                {
-                    var diagnostic = Diagnostic.Create(Rule, memberAccess.Name.GetLocation(), memberAccess.Name);
-                    context.ReportDiagnostic(diagnostic);
-                }
-            }
-        }
+                // Get the name of the List variable
+                string listName = memberAccess.Expression.ToString();
 
-        private void AnalyzeInvocation(SyntaxNodeAnalysisContext context)
-        {
-            if (context.Node is InvocationExpressionSyntax invocation &&
-                invocation.Expression is MemberAccessExpressionSyntax memberAccess &&
-                memberAccess.Name.Identifier.ValueText == "IndexOf" &&
-                context.SemanticModel.GetSymbolInfo(memberAccess).Symbol is IMethodSymbol methodSymbol &&
-                methodSymbol.ContainingType?.SpecialType == SpecialType.System_Collections_Generic_IList_T)
-            {
-                var diagnostic = Diagnostic.Create(Rule, memberAccess.GetLocation());
-                context.ReportDiagnostic(diagnostic);
+                // Report a diagnostic suggesting to use HashSet instead of List
+                context.ReportDiagnostic(Diagnostic.Create(Rule, memberAccess.Name.GetLocation(), listName));
             }
         }
     }

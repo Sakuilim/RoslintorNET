@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
     Roslintor.Analyzers.ModularityAnalyzers.CouplingAnalyzer,
-    Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
+    Roslintor.SecureStringCodeFix.SecureStringFixProvider>;
 
 namespace Roslintor.Tests.ModularityAnalyzerTests
 {

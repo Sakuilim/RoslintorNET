@@ -1,8 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
-using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.Analyzers.ParameterAnalyzers.ArgumentCountAnalyzer,
-    Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
+using VerifyCS = Roslintor.Test.CSharpAnalyzerVerifier<
+    Roslintor.Analyzers.ParameterAnalyzers.ArgumentCountAnalyzer>;
 
 namespace Roslintor.Tests.ParameterAnalyzerTests
 {

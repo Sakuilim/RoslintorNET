@@ -1,8 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
-using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.Analyzers.MaintainabilityAnalyzers.Method.MethodMaintainabilityAnalyzer,
-    Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
+using VerifyCS = Roslintor.Test.CSharpAnalyzerVerifier<
+    Roslintor.Analyzers.MaintainabilityAnalyzers.Method.MethodMaintainabilityAnalyzer>;
 
 namespace Roslintor.Tests.MaintainabilityAnalyzerTests
 {

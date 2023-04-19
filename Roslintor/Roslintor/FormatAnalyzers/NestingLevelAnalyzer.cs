@@ -1,4 +1,5 @@
 ﻿using System.Collections.Immutable;
+using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -40,23 +41,23 @@ namespace Roslintor.Analyzers.FormatAnalyzers
         {
             var method = (MethodDeclarationSyntax)context.Node;
 
-            int nestingLevel = 0;
-            foreach (var node in method.DescendantNodes())
+            int nestingLevel = method.DescendantNodes()
+                .Count(node => IsNestingStatement(node));
+
+            if (nestingLevel >= NestingLevelThreshold)
             {
-                if (node is IfStatementSyntax || node is ForStatementSyntax || node is WhileStatementSyntax || node is SwitchStatementSyntax || node is DoStatementSyntax || node is UsingStatementSyntax)
-                {
-                    nestingLevel++;
-                    if (nestingLevel >= NestingLevelThreshold)
-                    {
-                        context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.ValueText, NestingLevelThreshold));
-                        break;
-                    }
-                }
-                else if (node is BlockSyntax)
-                {
-                    nestingLevel += 1;
-                }
+                context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.ValueText, NestingLevelThreshold));
             }
+        }
+        private static bool IsNestingStatement(SyntaxNode node)
+        {
+            return node is IfStatementSyntax
+                || node is ForStatementSyntax
+                || node is WhileStatementSyntax
+                || node is SwitchStatementSyntax
+                || node is DoStatementSyntax
+                || node is UsingStatementSyntax
+                || node is BlockSyntax;
         }
     }
 }

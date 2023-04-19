@@ -33,23 +33,23 @@ namespace Roslintor.Analyzers.CodeDuplicationAnalyzers
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
             context.RegisterSyntaxNodeAction(
-                AnalyzeMethod, SyntaxKind.MethodDeclaration);
+                AnalyzeCodeDuplication, SyntaxKind.MethodDeclaration);
         }
-        private static void AnalyzeMethod(SyntaxNodeAnalysisContext context)
+        private static void AnalyzeCodeDuplication(SyntaxNodeAnalysisContext context)
         {
             // Get the syntax tree for the method
             var method = (MethodDeclarationSyntax)context.Node;
-            var methodTree = method.SyntaxTree;
 
-            // Compare the method's syntax tree with all the other methods' syntax trees in the project
-            var otherMethodTrees = context.SemanticModel.SyntaxTree.GetRoot().DescendantNodes().OfType<MethodDeclarationSyntax>().Where(m => m != method).Select(m => m.SyntaxTree).Distinct();
-            foreach (var otherTree in otherMethodTrees)
+            // Retrieve other method declarations from the same syntax tree
+            var otherMethods = context.SemanticModel.SyntaxTree.GetRoot().DescendantNodes().OfType<MethodDeclarationSyntax>().Where(m => m != method).ToList();
+
+            // Compare the current method with all other methods
+            foreach (var otherMethod in otherMethods)
             {
                 // Check if the trees are equivalent
-                if (SyntaxFactory.AreEquivalent(methodTree.GetRoot(), otherTree.GetRoot()))
+                if (SyntaxFactory.AreEquivalent(method, otherMethod))
                 {
                     // Report a diagnostic for the method
-                    var otherMethod = (MethodDeclarationSyntax)otherTree.GetRoot().DescendantNodes().First(n => n is MethodDeclarationSyntax);
                     context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), otherMethod.Identifier));
                 }
             }

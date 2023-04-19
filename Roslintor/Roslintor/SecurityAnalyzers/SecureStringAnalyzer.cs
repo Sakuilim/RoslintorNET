@@ -37,16 +37,13 @@ namespace Roslintor.Analyzers.SecurityAnalyzers
 
         private static void AnalyzeStringLiteral(SyntaxNodeAnalysisContext context)
         {
-            var literalExpression = (LiteralExpressionSyntax)context.Node;
+            var stringLiteral = (LiteralExpressionSyntax)context.Node;
+            string[] sensitiveWords = GetSensitiveWordList();
 
-            // check if the string contains potentially insecure content
-            if (literalExpression.Token.ValueText.Contains("password")
-                || literalExpression.Token.ValueText.Contains("secret")
-                    || literalExpression.Token.ValueText.Contains("psw")
-                        || literalExpression.Token.ValueText.Contains("Password"))
+            // Check if the string contains potentially insecure content
+            if (sensitiveWords.Any(word => stringLiteral.Token.ValueText.IndexOf(word, System.StringComparison.OrdinalIgnoreCase) >= 0))
             {
-
-                var variableDeclaration = literalExpression.AncestorsAndSelf().OfType<VariableDeclaratorSyntax>().FirstOrDefault();
+                var variableDeclaration = stringLiteral.AncestorsAndSelf().OfType<VariableDeclaratorSyntax>().FirstOrDefault();
                 if (variableDeclaration != null)
                 {
                     var variableName = variableDeclaration.Identifier.ValueText;
@@ -54,6 +51,26 @@ namespace Roslintor.Analyzers.SecurityAnalyzers
                     context.ReportDiagnostic(diagnostic);
                 }
             }
+        }
+        private static string[] GetSensitiveWordList()
+        {
+            return new []{
+            "password", "passwd", "psw", "passphrase",
+            "secret", "secretkey", "apikey", "accesstoken",
+            "token", "auth", "authentication", "credential",
+            "pin", "key", "encryptionkey", "decrypt",
+            "crypt", "cipher", "hash", "md5", "sha1",
+            "sha256", "sha512", "ssl", "tls", "privatekey",
+            "publickey", "rsa", "dsakey", "ecdsakey",
+            "aes", "des", "3des", "twofish", "blowfish",
+            "oauth", "clientid", "clientsecret", "xapikey",
+            "sensitive", "confidential", "user", "username",
+            "email", "connectionstring", "dbpassword", "pwd",
+            "databasepwd", "security", "protected", "ssn",
+            "socialsecurity", "dob", "dateofbirth", "taxid",
+            "ein", "creditcard", "ccnumber", "ccv", "ccexp",
+            "cvv", "cvc", "api", "saml", "accesskey", "secretaccesskey",
+            };
         }
     }
 }

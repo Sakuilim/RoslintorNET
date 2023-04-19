@@ -1,8 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
-using VerifyCS = Roslintor.Test.CSharpCodeFixVerifier<
-    Roslintor.Analyzers.CodeDuplicationAnalyzers.CodeDuplicationAnalyzer,
-    Roslintor.NamingCodeFix.RoslintorCodeFixProvider>;
+using VerifyCS = Roslintor.Test.CSharpAnalyzerVerifier<
+    Roslintor.Analyzers.CodeDuplicationAnalyzers.CodeDuplicationAnalyzer>;
 
 namespace Roslintor.Tests.CodeDuplicationAnalyzerTests
 {
