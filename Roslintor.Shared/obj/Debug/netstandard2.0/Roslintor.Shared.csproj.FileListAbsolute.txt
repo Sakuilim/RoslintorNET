@@ -1,5 +1,0 @@
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Shared\obj\Debug\netstandard2.0\Roslintor.Shared.csproj.AssemblyReference.cache
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Shared\obj\Debug\netstandard2.0\Roslintor.Shared.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Shared\obj\Debug\netstandard2.0\Roslintor.Shared.AssemblyInfoInputs.cache
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Shared\obj\Debug\netstandard2.0\Roslintor.Shared.AssemblyInfo.cs
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Shared\obj\Debug\netstandard2.0\Roslintor.Shared.csproj.CoreCompileInputs.cache
