@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Vsix", "Roslintor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Tests", "Roslintor\Roslintor.Tests\Roslintor.Tests.csproj", "{DF6501A9-8626-4949-8BA3-6225717F74C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslintor.Helpers", "Roslintor.Helpers\Roslintor.Helpers.csproj", "{BDD4087A-E72D-4FC8-BB19-84B60654318D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD4087A-E72D-4FC8-BB19-84B60654318D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD4087A-E72D-4FC8-BB19-84B60654318D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD4087A-E72D-4FC8-BB19-84B60654318D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD4087A-E72D-4FC8-BB19-84B60654318D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

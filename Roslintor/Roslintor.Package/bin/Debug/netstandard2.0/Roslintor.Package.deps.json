@@ -434,7 +434,8 @@
       },
       "Roslintor.Analyzers/1.0.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0",
+          "Roslintor.Helpers": "1.0.0"
         },
         "runtime": {
           "Roslintor.Analyzers.dll": {}
@@ -447,6 +448,14 @@
         },
         "runtime": {
           "Roslintor.CodeFixes.dll": {}
+        }
+      },
+      "Roslintor.Helpers/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+        },
+        "runtime": {
+          "Roslintor.Helpers.dll": {}
         }
       }
     }
@@ -638,6 +647,11 @@
       "sha512": ""
     },
     "Roslintor.CodeFixes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roslintor.Helpers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

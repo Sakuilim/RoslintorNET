@@ -3,7 +3,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
-using Roslintor.Analyzers.Helpers;
+using Roslintor.Helpers.Helpers;
 
 namespace Roslintor.Analyzers.ComplexityAnalyzers.Class
 {

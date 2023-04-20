@@ -1,9 +1,10 @@
 ﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.CSharp;
-using System.Collections.Generic;
 using Microsoft.CodeAnalysis;
+using System;
+using System.Collections.Generic;
 
-namespace Roslintor.Analyzers.Helpers
+namespace Roslintor.Helpers.Helpers
 {
     public static class HalsteadVolumeVisitor
     {
@@ -75,7 +76,7 @@ namespace Roslintor.Analyzers.Helpers
                 totalOperands += count;
             }
 
-            var halsteadVolume = distinctOperators * System.Math.Log(totalOperators) + distinctOperands * System.Math.Log(totalOperands);
+            var halsteadVolume = distinctOperators * Math.Log(totalOperators) + distinctOperands * Math.Log(totalOperands);
             return halsteadVolume;
         }
     }

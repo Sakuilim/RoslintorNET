@@ -33,4 +33,8 @@
     <Folder Include="NamingAnalyzers\ClassSizeAnalyzers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Roslintor.Helpers\Roslintor.Helpers.csproj" />
+  </ItemGroup>
+
 </Project>

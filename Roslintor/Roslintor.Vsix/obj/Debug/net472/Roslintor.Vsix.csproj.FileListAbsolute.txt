@@ -90,3 +90,5 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Debug\net472\System.Threading.Channels.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Debug\net472\Roslintor.Analyzers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Debug\net472\Roslintor.Analyzers.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Debug\net472\Roslintor.Helpers.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Debug\net472\Roslintor.Helpers.pdb

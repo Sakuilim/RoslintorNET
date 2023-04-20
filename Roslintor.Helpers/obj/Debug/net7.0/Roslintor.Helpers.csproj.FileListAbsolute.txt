@@ -1,0 +1,12 @@
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\bin\Debug\net7.0\Roslintor.Helpers.deps.json
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\bin\Debug\net7.0\Roslintor.Helpers.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\bin\Debug\net7.0\Roslintor.Helpers.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\Roslintor.Helpers.csproj.AssemblyReference.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\Roslintor.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\Roslintor.Helpers.AssemblyInfoInputs.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\Roslintor.Helpers.AssemblyInfo.cs
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\Roslintor.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\Roslintor.Helpers.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\refint\Roslintor.Helpers.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\Roslintor.Helpers.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Debug\net7.0\ref\Roslintor.Helpers.dll
