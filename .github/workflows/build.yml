@@ -50,10 +50,9 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Sakuilim_RoslintorNET" /o:"sakuilim" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
           dotnet-coverage collect 'dotnet test' -f xml  -o 'coverage.xml'
           ls
-          Move-Item -Path 'coverage.xml' -Destination .. -Force
-          ls
-          cd ..
-          ls
-          dotnet build Roslintor.Analyzers --no-incremental
+          # Move-Item -Path 'coverage.xml' -Destination .. -Force
+          # cd ..
+          # ls
+          dotnet build Roslintor --no-incremental
           ls
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
