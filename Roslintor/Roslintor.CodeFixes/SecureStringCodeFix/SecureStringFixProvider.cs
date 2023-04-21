@@ -7,12 +7,14 @@ using Microsoft.CodeAnalysis.Rename;
 using Roslintor.Analyzers.FormatAnalyzers;
 using System.Collections.Immutable;
 using System.Composition;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Roslintor.SecureStringCodeFix
 {
+    [ExcludeFromCodeCoverage]
     [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(SecureStringFixProvider)), Shared]
     public class SecureStringFixProvider : CodeFixProvider
     {

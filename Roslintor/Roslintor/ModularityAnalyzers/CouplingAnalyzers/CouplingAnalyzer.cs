@@ -1,4 +1,5 @@
 ﻿using System.Collections.Immutable;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -7,6 +8,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 
 namespace Roslintor.Analyzers.ModularityAnalyzers
 {
+    [ExcludeFromCodeCoverage]
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class CouplingAnalyzer : DiagnosticAnalyzer
     {
