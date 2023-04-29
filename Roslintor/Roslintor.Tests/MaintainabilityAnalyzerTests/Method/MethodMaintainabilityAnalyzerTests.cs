@@ -36,13 +36,6 @@ namespace Roslintor.Tests.MaintainabilityAnalyzerTests
         public async Task MethodMaintainabilityIndexAnalysis_Should_ReturnMethodMaintainabilityIndexLevelTooLow()
         {
             var test = @"
-            using System;
-            using System.Collections.Generic;
-            using System.Linq;
-            using System.Text;
-            using System.Threading.Tasks;
-            using System.Diagnostics;
-
             namespace ConsoleApplication1
             {
                 public class TestClass
@@ -60,7 +53,7 @@ namespace Roslintor.Tests.MaintainabilityAnalyzerTests
                         }
                         if(k > x)
                         {
-                            for(int i=0;i<x; i++)
+                            for(int i=0; i<x; i++)
                             {
                                 k = 1;
                             }
@@ -72,126 +65,60 @@ namespace Roslintor.Tests.MaintainabilityAnalyzerTests
                                 x++;
                             }
                         }
-                        var a = 10;
-                        var b = 10;
-                        var c = 10;
-                        var d = 10;
-                        var e = 10;
-                        var f = 10;
-                        var g = 10;
-                        var h = 10;
-                        var j = 10;
-                        var l = 10;
-                        var aa = 10;
-                        var bb = 10;
-                        var cc = 10;
-                        var dd = 10;
-                        var ee = 10;
-                        var ff = 10;
-                        var gg = 10;
-                        while(ee > 10)
+
+                        var a = 1;
+                        var b = 2;
+                        var c = 3;
+                        var d = 4;
+
+                        if (a > b)
                         {
-                            if(a > 10)
+                            if (b > c)
                             {
-                                if(b > 16)
+                                if (c > d)
                                 {
-                                    if(c > 161)
-                                    {
-                                        if(d > 99)
-                                        {
-                                            e = 51;
-                                            ee++;
-                                        }
-                                    }
+                                    d = 1;
                                 }
                             }
                         }
-                        var hh = 10;
-                        var jj = 10;
-                        var kk = 10;
-                        var ll = 10;
-                        var mm = 10;
-                        var nn = 10;
-                        var oo = 10;
-                        var qq = 10;
-                        var rr = 10;
-                        var zz = 10;
-                        var tt = 10;
-                        var aaa = 10;
-                        var ccc2 = 10;
-                        var ddd2 = 10;
-                        var eee2 = 10;
-                        var fff2 = 10;
-                        var ggg2 = 10;
-                        var a12 = 10;
-                        var b12 = 10;
-                        var c12 = 10;
-                        var d12 = 10;
-                        var e12 = 10;
-                        var f12 = 10;
-                        var g12 = 10;
-                        var h12 = 10;
-                        var j12 = 10;
-                        var k12 = 10;
-                        var l12 = 10;
-                        var aa5 = 10;
-                        var bb5 = 10;
-                        var cc5 = 10;
-                        var dd5 = 10;
-                        var ee5 = 10;
-                        var ff5 = 10;
-                        var gg5 = 10;
-                        var hh5 = 10;
-                        var jj5 = 10;
-                        var kk5 = 10;
-                        var ll5 = 10;
-                        var mm5 = 10;
-                        var nn5 = 10;
-                        var oo5 = 10;
-                        var qq5 = 10;
-                        var rr5 = 10;
-                        var zz5 = 10;
-                        var tt5 = 10;
-                        var a121 = 10;
-                        var b121 = 10;
-                        var c121 = 10;
-                        var d121 = 10;
-                        var e121 = 10;
-                        var f121 = 10;
-                        var g121 = 10;
-                        var h121 = 10;
-                        var j121 = 10;
-                        var k121 = 10;
-                        var l121 = 10;
-                        var aa51 = 10;
-                        var bb51 = 10;
-                        var cc51 = 10;
-                        var dd51 = 10;
-                        var ee51 = 10;
-                        var ff51 = 10;
-                        var gg51 = 10;
-                        var hh51 = 10;
-                        var jj51 = 10;
-                        var kk51 = 10;
-                        var ll51 = 10;
-                        var mm51 = 10;
-                        var nn51 = 10;
-                        var oo51 = 10;
-                        var qq51 = 10;
-                        var rr51 = 10;
-                        var zz51 = 10;
-                        var tt51 = 10;
-                        if(qq > 10)
+
+                        var e = 5;
+                        var f = 6;
+                        if (e > f)
                         {
-                            if(x > 16)
+                            if (f > e)
                             {
-                                if(qq51 > 161)
-                                {
-                                    if(zz51 > 99)
-                                    {
-                                        tt = 51;
-                                    }
-                                }
+                                e = 1;
+                            }
+                        }
+
+                        var g = 7;
+                        var h = 8;
+                        if (g > h)
+                        {
+                            if (h > g)
+                            {
+                                g = 1;
+                            }
+                        }
+
+                        var m = 9;
+                        var n = 10;
+                        if (m > n)
+                        {
+                            if (n > m)
+                            {
+                                m = 1;
+                            }
+                        }
+
+                        var p = 11;
+                        var q = 12;
+                        if (p > q)
+                        {
+                            if (q > p)
+                            {
+                                p = 1;
                             }
                         }
                     }    

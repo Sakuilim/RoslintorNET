@@ -50,17 +50,13 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Class
                 linesOfCode += classDeclaration.GetText().Lines.Count;
             }
 
-            var mi = CalculateMI(halsteadVolume, cyclomaticComplexity, linesOfCode);
+            var mi = MICalculator.CalculateMI(halsteadVolume, cyclomaticComplexity, linesOfCode);
 
-            if (mi < 55)
+            if (mi < 70)
             {
                 var diagnostic = Diagnostic.Create(Rule, classDeclaration.Identifier.GetLocation(), classDeclaration.Identifier);
                 context.ReportDiagnostic(diagnostic);
             }
-        }
-        private static double CalculateMI(double halsteadVolume, int cyclomaticComplexity, int linesOfCode)
-        {
-            return 171 - 5.2 * System.Math.Log(halsteadVolume) - 0.23 * cyclomaticComplexity - 16.2 * System.Math.Log(linesOfCode);
         }
     }
 }

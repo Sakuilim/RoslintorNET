@@ -14,7 +14,7 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Method
         private const string Category = "Maintainability";
         private const string Title = "Reduce complexity of this method";
         private const string MessageFormat = "Method '{0}' complexity is too high. Consider simplifying your method.";
-        private const string Description = "Simplify your method to not be complex.";
+        private const string Description = "Simplify your method to reduce complexity.";
 
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(
@@ -41,17 +41,13 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Method
             var halsteadVolume = HalsteadVolumeVisitor.ComputeHalsteadVolume(method);
             var cyclomaticComplexity = CyclomaticComplexityHelper.CalculateComplexity(method);
             var linesOfCode = method.GetText().Lines.Count;
-            var mi = CalculateMI(halsteadVolume, cyclomaticComplexity, linesOfCode);
+            var mi = MICalculator.CalculateMI(halsteadVolume, cyclomaticComplexity, linesOfCode);
 
-            if (mi < 55)
+            if (mi < 70)
             {
                 var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier);
                 context.ReportDiagnostic(diagnostic);
             }
-        }
-        private static double CalculateMI(double halsteadVolume, int cyclomaticComplexity, int linesOfCode)
-        {
-            return 171 - 5.2 * System.Math.Log(halsteadVolume) - 0.23 * cyclomaticComplexity - 16.2 * System.Math.Log(linesOfCode);
         }
     }
 }

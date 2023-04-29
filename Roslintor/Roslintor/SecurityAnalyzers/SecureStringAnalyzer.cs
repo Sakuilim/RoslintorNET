@@ -64,7 +64,7 @@ namespace Roslintor.Analyzers.SecurityAnalyzers
             "publickey", "rsa", "dsakey", "ecdsakey",
             "aes", "des", "3des", "twofish", "blowfish",
             "oauth", "clientid", "clientsecret", "xapikey",
-            "sensitive", "confidential", "user", "username",
+            "confidential", "user", "username",
             "email", "connectionstring", "dbpassword", "pwd",
             "databasepwd", "security", "protected", "ssn",
             "socialsecurity", "dob", "dateofbirth", "taxid",
