@@ -31,7 +31,7 @@ namespace Roslintor.Tests
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("MSA02").WithLocation(0).WithArguments("MethodName");
+            var expected = VerifyCS.Diagnostic("MSA002").WithLocation(0).WithArguments("MethodName");
 
             Console.WriteLine(expected);
 

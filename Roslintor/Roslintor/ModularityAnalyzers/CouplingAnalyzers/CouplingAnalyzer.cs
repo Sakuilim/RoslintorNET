@@ -12,7 +12,7 @@ namespace Roslintor.Analyzers.ModularityAnalyzers
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class CouplingAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "MA001";
+        public const string DiagnosticId = "COA001";
         private const string Category = "Performance";
         private const string Title = "High coupling detected";
         private const string MessageFormat = "The type '{0}' has {1} dependencies on other types or members. Consider refactoring to reduce coupling.";

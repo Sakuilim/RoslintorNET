@@ -59,9 +59,9 @@ namespace Roslintor.Tests
                 }
             }";
 
-            var expected1 = VerifyCS.Diagnostic("SSA01").WithLocation(0).WithArguments("stringVarPassword");
-            var expected2 = VerifyCS.Diagnostic("SSA01").WithLocation(1).WithArguments("stringVarSecret");
-            var expected3 = VerifyCS.Diagnostic("SSA01").WithLocation(2).WithArguments("stringVarPsw");
+            var expected1 = VerifyCS.Diagnostic("SSA001").WithLocation(0).WithArguments("stringVarPassword");
+            var expected2 = VerifyCS.Diagnostic("SSA001").WithLocation(1).WithArguments("stringVarSecret");
+            var expected3 = VerifyCS.Diagnostic("SSA001").WithLocation(2).WithArguments("stringVarPsw");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected1, expected2, expected3);
         }

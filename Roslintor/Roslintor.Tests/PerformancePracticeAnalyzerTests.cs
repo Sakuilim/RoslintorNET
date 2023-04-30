@@ -50,7 +50,7 @@ namespace Roslintor.Tests
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("PPA01").WithLocation(0).WithArguments("Contains");
+            var expected = VerifyCS.Diagnostic("PPA001").WithLocation(0).WithArguments("Contains");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
         }

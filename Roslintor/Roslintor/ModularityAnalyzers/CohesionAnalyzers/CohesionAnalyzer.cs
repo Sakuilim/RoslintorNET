@@ -12,7 +12,7 @@ namespace Roslintor.Analyzers.ModularityAnalyzers
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class CohesionAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "MA002";
+        public const string DiagnosticId = "COA002";
         private const string Category = "Performance";
         private const string Title = "Low cohesion detected";
         private const string MessageFormat = "The method '{0}' has an unused parameter. Consider refactoring the class to improve cohesion.";

@@ -125,7 +125,7 @@ namespace Roslintor.Tests.MaintainabilityAnalyzerTests
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("MA01").WithLocation(0).WithArguments("MethodName");
+            var expected = VerifyCS.Diagnostic("MA001").WithLocation(0).WithArguments("MethodName");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
 

@@ -15,9 +15,7 @@ CA04 | Performance | Warning | ClassCyclomaticComplexityAnalyzer, [Documentation
 CD001 | Performance | Warning | CodeDuplicationAnalyzer
 FA001 | Format | Warning | NestingLevelAnalyzer
 MA001 | Maintainability | Warning | MethodMaintainabilityAnalyzer
-MA001 | Performance | Warning | CouplingAnalyzer
 MA002 | Maintainability | Warning | ClassMaintainabilityAnalyzer
-MA002 | Performance | Warning | CohesionAnalyzer
 MSA002 | Style | Warning | MethodSizeAnalyzer
 MSA003 | Style | Warning | MethodSize80Analyzer
 PPA001 | Performance | Warning | PerformancePracticeAnalyzer

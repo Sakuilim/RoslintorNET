@@ -54,7 +54,7 @@ namespace Roslintor.Tests.ParameterAnalyzerTests
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("AC01").WithLocation(0).WithArguments("MethodName", "5", "4");
+            var expected = VerifyCS.Diagnostic("AC001").WithLocation(0).WithArguments("MethodName", "5", "4");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
 

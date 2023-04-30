@@ -63,8 +63,8 @@ namespace Roslintor.Tests.CodeDuplicationAnalyzerTests
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("CD01").WithLocation(0).WithArguments("MethodName");
-            var expected2 = VerifyCS.Diagnostic("CD01").WithLocation(1).WithArguments("MethodName");
+            var expected = VerifyCS.Diagnostic("CD001").WithLocation(0).WithArguments("MethodName");
+            var expected2 = VerifyCS.Diagnostic("CD001").WithLocation(1).WithArguments("MethodName");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected, expected2);
 
