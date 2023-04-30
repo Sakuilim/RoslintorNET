@@ -10,7 +10,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class MethodCyclomaticComplexityAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "CA01";
+        public const string DiagnosticId = "CA001";
         private const string Category = "Performance";
         private const string Title = "Reduce cyclomatic complexity of this method";
         private const string MessageFormat = "Method '{0}' cyclomatic complexity is too high. Consider simplifying your method.";

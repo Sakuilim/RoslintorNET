@@ -10,7 +10,7 @@ namespace Roslintor.Analyzers.NamingAnalyzers
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class MethodSizeAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "MSA02";
+        public const string DiagnosticId = "MSA002";
         private const string Title = "Empty method";
         private const string MessageFormat = "Method '{0}' is empty. Consider adding code to your method.";
         private const string Description = "Add code to your method.";

@@ -10,7 +10,7 @@ namespace Roslintor.Analyzers.CodeDuplicationAnalyzers
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class CodeDuplicationAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "CD01";
+        public const string DiagnosticId = "CD001";
         private const string Category = "Performance";
         private const string Title = "Code duplication";
         private const string MessageFormat = "The code in this method is very similar to the code in method '{0}'. Consider refactoring the code to avoid duplication.";

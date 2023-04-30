@@ -10,7 +10,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Class
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class ClassCognitiveComplexityAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "CA03";
+        public const string DiagnosticId = "CA003";
         private const string Title = "Reduce cognitive complexity of this class";
         private const string MessageFormat = "Class '{0}' cognitive complexity is too high. Consider simplifying your class.";
         private const string Description = "Simplify your class to not be complex.";

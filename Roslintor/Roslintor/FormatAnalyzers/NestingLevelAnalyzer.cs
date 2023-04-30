@@ -10,10 +10,10 @@ namespace Roslintor.Analyzers.FormatAnalyzers
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class NestingLevelAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "FA01";
+        public const string DiagnosticId = "FA001";
         private const string Category = "Format";
         private const string Title = "Method nesting level exceeded";
-        private const string MessageFormat = "Method '{0}' has exceeded the maximum nesting level of {1}.";
+        private const string MessageFormat = "Method '{0}' has exceeded the maximum nesting level of {1}";
         private const string Description = "Methods with excessive nesting levels can be difficult to understand and maintain.";
 
         private const int NestingLevelThreshold = 8;

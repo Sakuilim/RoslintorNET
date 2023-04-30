@@ -10,7 +10,7 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Method
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class MethodMaintainabilityAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "MA01";
+        public const string DiagnosticId = "MA001";
         private const string Category = "Maintainability";
         private const string Title = "Simplify this method to improve Maintainability Index";
         private const string MessageFormat = "Method '{0}' Maintainability Index is too low. Consider simplifying your method.";

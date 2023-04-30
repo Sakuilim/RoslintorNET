@@ -10,7 +10,7 @@ namespace Roslintor.Analyzers.PerformanceAnalyzers
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class PerformancePracticeAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "PPA01";
+        public const string DiagnosticId = "PPA001";
         private const string Title = "Use a HashTable for Searching";
         private const string MessageFormat = "Consider using a hash table for searching instead of a list.";
         private const string Category = "Performance";

@@ -10,7 +10,7 @@ namespace Roslintor.Analyzers.SecurityAnalyzers
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class SecureStringAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "SSA01";
+        public const string DiagnosticId = "SSA001";
         private const string Category = "Security";
         private const string Title = "Use a string that doesn't have sensitive words";
         private const string MessageFormat = "String '{0}' is not a secure variable. Consider changing your method value to be more secure.";

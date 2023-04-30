@@ -1,4 +1,5 @@
 ﻿using System.Collections.Immutable;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -7,10 +8,11 @@ using Microsoft.CodeAnalysis.Diagnostics;
 
 namespace Roslintor.Analyzers.ModularityAnalyzers
 {
+    [ExcludeFromCodeCoverage]
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class CohesionAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "MA02";
+        public const string DiagnosticId = "MA002";
         private const string Category = "Performance";
         private const string Title = "Low cohesion detected";
         private const string MessageFormat = "The method '{0}' has an unused parameter. Consider refactoring the class to improve cohesion.";
