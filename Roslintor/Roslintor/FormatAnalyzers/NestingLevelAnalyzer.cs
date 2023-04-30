@@ -12,7 +12,7 @@ namespace Roslintor.Analyzers.FormatAnalyzers
     {
         public const string DiagnosticId = "FA01";
         private const string Category = "Format";
-        private const string Title = "Method Nesting Level Exceeded";
+        private const string Title = "Method nesting level exceeded";
         private const string MessageFormat = "Method '{0}' has exceeded the maximum nesting level of {1}.";
         private const string Description = "Methods with excessive nesting levels can be difficult to understand and maintain.";
 

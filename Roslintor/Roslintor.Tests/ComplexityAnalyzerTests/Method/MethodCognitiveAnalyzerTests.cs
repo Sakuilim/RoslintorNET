@@ -67,10 +67,40 @@ namespace Roslintor.Tests.ComplexityAnalyzerTests
                         }
                         if(k == x)
                         {
-                            while (k < 0)
+                            do
                             {
                                 x++;
-                            }
+                            } while (k < 0);
+                        }
+
+                        switch (x)
+                        {
+                            case 1:
+                                k = 2;
+                                break;
+                            case 2:
+                                k = 3;
+                                break;
+                            default:
+                                k = 4;
+                                break;
+                        }
+
+                        try
+                        {
+                            x = k / x;
+                        }
+                        catch (Exception)
+                        {
+                            x = -1;
+                        }
+
+                        Func<int, int> parenthesizedLambda = (y) => y * 2;
+                        Action<int> anonymousMethod = delegate (int y) { x = y * 3; };
+
+                        int LocalFunction(int y)
+                        {
+                            return y * 4;
                         }
                     }    
                 }

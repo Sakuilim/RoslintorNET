@@ -12,9 +12,9 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Class
     {
         public const string DiagnosticId = "MA02";
         private const string Category = "Maintainability";
-        private const string Title = "Reduce complexity of this class";
-        private const string MessageFormat = "Class '{0}' complexity is too high. Consider simplifying your class.";
-        private const string Description = "Simplify your class to not be complex.";
+        private const string Title = "Simplify this class to improve Maintainability Index";
+        private const string MessageFormat = "Class '{0}' Maintainability Index is too lows. Consider simplifying your class.";
+        private const string Description = "Simplify your class to be more maintainable";
 
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(

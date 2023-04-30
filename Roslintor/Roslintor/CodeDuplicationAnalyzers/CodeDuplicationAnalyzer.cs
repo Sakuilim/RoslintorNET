@@ -12,7 +12,7 @@ namespace Roslintor.Analyzers.CodeDuplicationAnalyzers
     {
         public const string DiagnosticId = "CD01";
         private const string Category = "Performance";
-        private const string Title = "Code duplication detected";
+        private const string Title = "Code duplication";
         private const string MessageFormat = "The code in this method is very similar to the code in method '{0}'. Consider refactoring the code to avoid duplication.";
         private const string Description = "Methods with duplicate code can be difficult to understand and maintain.";
 
@@ -39,6 +39,12 @@ namespace Roslintor.Analyzers.CodeDuplicationAnalyzers
         {
             // Get the syntax tree for the method
             var method = (MethodDeclarationSyntax)context.Node;
+
+            // Check if the method has a body
+            if (method.Body == null)
+            {
+                return;
+            }
 
             // Retrieve other method declarations from the same syntax tree
             var otherMethods = context.SemanticModel.SyntaxTree.GetRoot().DescendantNodes().OfType<MethodDeclarationSyntax>().Where(m => m != method).ToList();

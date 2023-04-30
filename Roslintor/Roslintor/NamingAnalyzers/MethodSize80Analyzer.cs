@@ -11,7 +11,7 @@ namespace Roslintor.Analyzers.NamingAnalyzers
     public class MethodSize80Analyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "MSA03";
-        private const string Title = "Method too big";
+        private const string Title = "Method is too big";
         private const string MessageFormat = "Method '{0}' is too big. Consider extracting some code to another method.";
         private const string Description = "Make your method smaller.";
         private const string Category = "Style";

@@ -11,9 +11,9 @@ namespace Roslintor.Analyzers.ParameterAnalyzers
     {
         private const string DiagnosticId = "AC01";
         private const string Category = "Naming";
-        private const string Title = "Method has too many arguments";
+        private const string Title = "Reduce the amount of arguments in a method";
         private const string MessageFormat = "Method '{0}' has {1} arguments, which exceeds the maximum limit of {2}.";
-        private const string Description = "Methods with excessive arguments can be difficult to understand and maintain.";
+        private const string Description = "Methods with excessive amount of arguments can be difficult to understand and maintain.";
 
         private const int MaxArgumentCount = 4;
 

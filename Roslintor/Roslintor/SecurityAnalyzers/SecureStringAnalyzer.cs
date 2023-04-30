@@ -12,8 +12,8 @@ namespace Roslintor.Analyzers.SecurityAnalyzers
     {
         public const string DiagnosticId = "SSA01";
         private const string Category = "Security";
-        private const string Title = "Use a secure string";
-        private const string MessageFormat = "String '{0}' is not a secure variable. Consider changing your method name to be more secure.";
+        private const string Title = "Use a string that doesn't have sensitive words";
+        private const string MessageFormat = "String '{0}' is not a secure variable. Consider changing your method value to be more secure.";
         private const string Description = "Change your variable to be more secure.";
 
         private static readonly DiagnosticDescriptor Rule =
