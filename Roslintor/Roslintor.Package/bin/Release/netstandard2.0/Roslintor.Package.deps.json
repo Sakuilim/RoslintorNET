@@ -10,8 +10,9 @@
       "Roslintor.Package/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Roslintor.Analyzers": "1.0.0",
-          "Roslintor.CodeFixes": "1.0.0"
+          "Roslintor": "1.0.1.8",
+          "Roslintor.CodeFixes": "1.0.0",
+          "Roslintor.Analyzers": "1.0.0.0"
         },
         "runtime": {
           "Roslintor.Package.dll": {}
@@ -432,9 +433,10 @@
           }
         }
       },
-      "Roslintor.Analyzers/1.0.0": {
+      "Roslintor/1.0.1.8": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0",
+          "Roslintor.Helpers": "1.0.0"
         },
         "runtime": {
           "Roslintor.Analyzers.dll": {}
@@ -443,10 +445,26 @@
       "Roslintor.CodeFixes/1.0.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.0"
+          "Roslintor": "1.0.1.8"
         },
         "runtime": {
           "Roslintor.CodeFixes.dll": {}
+        }
+      },
+      "Roslintor.Helpers/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+        },
+        "runtime": {
+          "Roslintor.Helpers.dll": {}
+        }
+      },
+      "Roslintor.Analyzers/1.0.0.0": {
+        "runtime": {
+          "Roslintor.Analyzers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -632,13 +650,23 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
-    "Roslintor.Analyzers/1.0.0": {
+    "Roslintor/1.0.1.8": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Roslintor.CodeFixes/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roslintor.Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roslintor.Analyzers/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

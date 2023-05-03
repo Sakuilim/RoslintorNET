@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7y+wpEhLTPthHHNel+ArRiViEgExv4WClVTBzphJlsZDbBDNCh5msCfUuhbeaosdjjbzQ2d6rkqI2ICtq8InLg==",
+  "dgSpecHash": "EpgimfZsCw5cfKD0FRQHhvCD52ME9iVBo1H98OF3yB0Wd4OWmbxJgtmlUtJ8J6WcpEGBY1cZxik88bs9XCgSAw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Package\\Roslintor.Package.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,8 @@
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.0\\roslintor.helpers.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

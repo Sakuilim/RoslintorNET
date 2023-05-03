@@ -13,11 +13,12 @@ CA004 | Performance | Warning | ClassCyclomaticComplexityAnalyzer, [Documentatio
 CA01 | Performance | Warning | CyclomaticComplexityAnalyzer, [Documentation](https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca01)
 CA04 | Performance | Warning | ClassCyclomaticComplexityAnalyzer, [Documentation](https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca04)
 CD001 | Performance | Warning | CodeDuplicationAnalyzer
+COA001 | Performance | Warning | CouplingAnalyzer
+COA002 | Performance | Warning | CohesionAnalyzer
 FA001 | Format | Warning | NestingLevelAnalyzer
 MA001 | Maintainability | Warning | MethodMaintainabilityAnalyzer
 MA002 | Maintainability | Warning | ClassMaintainabilityAnalyzer
 MSA002 | Style | Warning | MethodSizeAnalyzer
 MSA003 | Style | Warning | MethodSize80Analyzer
 PPA001 | Performance | Warning | PerformancePracticeAnalyzer
-Roslintor | Naming | Warning | RoslintorAnalyzer
 SSA001 | Security | Warning | SecureStringAnalyzer

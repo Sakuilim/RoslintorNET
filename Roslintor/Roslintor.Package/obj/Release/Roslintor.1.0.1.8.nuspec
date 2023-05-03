@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Roslintor</id>
-    <version>1.0.1.3</version>
+    <version>1.0.1.8</version>
     <title>Roslintor</title>
     <authors>Sakuilim</authors>
     <developmentDependency>true</developmentDependency>
     <projectUrl>https://github.com/Sakuilim/RoslintorNET</projectUrl>
-    <description>Update for 1.0.1.3 Roslintor analyzer</description>
+    <description>Update for 1.0.1.8 Roslintor analyzer</description>
     <copyright>Copyright</copyright>
     <tags>First Version of Analyzers</tags>
     <repository type="git" url="https://github.com/Sakuilim/RoslintorNET" />

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>Roslintor</id>
+    <id>Roslintor.Helpers</id>
     <version>1.0.0</version>
-    <authors>Roslintor</authors>
+    <authors>Roslintor.Helpers</authors>
     <description>Package Description</description>
     <dependencies>
       <group targetFramework=".NETStandard2.0">
@@ -12,6 +12,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\bin\Release\netstandard2.0\Roslintor.dll" target="lib\netstandard2.0\Roslintor.dll" />
+    <file src="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\bin\Release\netstandard2.0\Roslintor.Helpers.dll" target="lib\netstandard2.0\Roslintor.Helpers.dll" />
   </files>
 </package>

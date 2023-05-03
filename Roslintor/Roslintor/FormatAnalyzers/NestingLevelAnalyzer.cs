@@ -41,14 +41,35 @@ namespace Roslintor.Analyzers.FormatAnalyzers
         {
             var method = (MethodDeclarationSyntax)context.Node;
 
-            int nestingLevel = method.DescendantNodes()
-                .Count(node => IsNestingStatement(node));
+            int maxNestingLevel = CalculateMaxNestingLevel(method);
 
-            if (nestingLevel >= NestingLevelThreshold)
+            if (maxNestingLevel >= NestingLevelThreshold)
             {
                 context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.ValueText, NestingLevelThreshold));
             }
         }
+
+        private static int CalculateMaxNestingLevel(SyntaxNode node)
+        {
+            int maxChildLevel = 0;
+
+            foreach (var childNode in node.ChildNodes())
+            {
+                int childLevel = CalculateMaxNestingLevel(childNode);
+                if (childLevel > maxChildLevel)
+                {
+                    maxChildLevel = childLevel;
+                }
+            }
+
+            if (IsNestingStatement(node))
+            {
+                return maxChildLevel + 1;
+            }
+
+            return maxChildLevel;
+        }
+
         private static bool IsNestingStatement(SyntaxNode node)
         {
             return node is IfStatementSyntax

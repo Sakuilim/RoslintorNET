@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "u4Opz7FT6hQJ2kz4wcxBh6TCtKISKALgQV+hLf2dh6jGWIW5mSW/RNeSFRqLJ4tk4L56tvjF9kOc4jYolisyEQ==",
+  "dgSpecHash": "IE4TTjmtpEjH7GDCNZoGWD1xiskZsjWcAeqbLMRAyTdX9EXpzx1UsytLs6uJJ8o+0xNWCEQm+YMRrRx4fA30Cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Tests\\Roslintor.Tests.csproj",
   "expectedPackageFiles": [
@@ -146,7 +146,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.0\\roslintor.helpers.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

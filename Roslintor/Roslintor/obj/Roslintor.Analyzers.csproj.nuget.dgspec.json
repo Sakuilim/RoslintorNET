@@ -72,10 +72,10 @@
       }
     },
     "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.Analyzers.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1.9",
       "restore": {
         "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.Analyzers.csproj",
-        "projectName": "Roslintor.Analyzers",
+        "projectName": "Roslintor",
         "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.Analyzers.csproj",
         "packagesPath": "C:\\Users\\Marius Milius\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\obj\\",

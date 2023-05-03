@@ -3,9 +3,24 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <IsPackable>false</IsPackable>
-
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
     <!-- Avoid ID conflicts with the package project. -->
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Roslintor</PackageId>
+    <PackageVersion>1.0.1.9</PackageVersion>
+    <Authors>Sakuilim</Authors>
+    <PackageProjectUrl>https://github.com/Sakuilim/RoslintorNET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Sakuilim/RoslintorNET</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Roslintor</Description>
+    <Copyright>Copyright</Copyright>
+    <PackageTags>First Version of Analyzers</PackageTags>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <Description>
+      Update for 1.0.1.9 Roslintor analyzer
+    </Description>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   
   <ItemGroup>
@@ -27,10 +42,6 @@
 
   <ItemGroup>
     <None Include="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NamingAnalyzers\ClassSizeAnalyzers\" />
   </ItemGroup>
 
   <ItemGroup>

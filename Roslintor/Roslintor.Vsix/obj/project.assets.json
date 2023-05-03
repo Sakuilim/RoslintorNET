@@ -302,18 +302,18 @@
           "build/Microsoft.VisualStudio.Threading.Analyzers.targets": {}
         }
       },
-      "Microsoft.VSSDK.BuildTools/17.5.4065": {
+      "Microsoft.VSSDK.BuildTools/17.5.4074": {
         "type": "package",
         "dependencies": {
           "Microsoft.VisualStudio.SDK.Analyzers": "16.10.10",
-          "Microsoft.VsSDK.CompatibilityAnalyzer": "17.5.4065"
+          "Microsoft.VsSDK.CompatibilityAnalyzer": "17.5.4074"
         },
         "build": {
           "build/Microsoft.VSSDK.BuildTools.props": {},
           "build/Microsoft.VSSDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.VsSDK.CompatibilityAnalyzer/17.5.4065": {
+      "Microsoft.VsSDK.CompatibilityAnalyzer/17.5.4074": {
         "type": "package",
         "frameworkAssemblies": [
           "System.IO.Compression",
@@ -594,7 +594,7 @@
           }
         }
       },
-      "Roslintor.Analyzers/1.0.0": {
+      "Roslintor/1.0.1.9": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -602,10 +602,10 @@
           "Roslintor.Helpers": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Roslintor.Analyzers.dll": {}
+          "bin/placeholder/Roslintor.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Roslintor.Analyzers.dll": {}
+          "bin/placeholder/Roslintor.dll": {}
         }
       },
       "Roslintor.CodeFixes/1.0.0": {
@@ -613,7 +613,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.0"
+          "Roslintor": "1.0.1.9"
         },
         "compile": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
@@ -1257,10 +1257,10 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.VSSDK.BuildTools/17.5.4065": {
-      "sha512": "fQ7SUit1EDJGN/hFztFTho9IT3BOlU5Ek1O6euXB4r9ZtUmcHN9mufyFCIU6yRPXim8L4k39E4YtJUvsmX4wWA==",
+    "Microsoft.VSSDK.BuildTools/17.5.4074": {
+      "sha512": "2WxZzibhmV8T5HKLolzQt9SO8psKx2cLIRUbw0X8D295HtcXvzbmlXITuS9EdAQyFt0FKhOy4j96karBrvbtpQ==",
       "type": "package",
-      "path": "microsoft.vssdk.buildtools/17.5.4065",
+      "path": "microsoft.vssdk.buildtools/17.5.4074",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1270,7 +1270,7 @@
         "PackageIcon.png",
         "build/Microsoft.VSSDK.BuildTools.props",
         "build/Microsoft.VSSDK.BuildTools.targets",
-        "microsoft.vssdk.buildtools.17.5.4065.nupkg.sha512",
+        "microsoft.vssdk.buildtools.17.5.4074.nupkg.sha512",
         "microsoft.vssdk.buildtools.nuspec",
         "tools/vssdk/Empty.resx",
         "tools/vssdk/MessagePack.Annotations.dll",
@@ -1420,10 +1420,10 @@
         "tools/vssdk/schemas/VSIXManifestSchema.xsd"
       ]
     },
-    "Microsoft.VsSDK.CompatibilityAnalyzer/17.5.4065": {
-      "sha512": "2dCaaJ+ReGLxMGJAPmxDtJm1VNxn1Jo0ibJXj1mIrEJ6f8TVtKh03rtx8oGAiOJYVPcEZIqhBbtbgf6Bn619uA==",
+    "Microsoft.VsSDK.CompatibilityAnalyzer/17.5.4074": {
+      "sha512": "2qc8/469BzeGN8WUGcOXNAfVGNlCzOAT9us5CVPpMvjB6oBFFgW2h+A8G4QzuGsMK5f+CbCImK3hwyzmL0N4EA==",
       "type": "package",
-      "path": "microsoft.vssdk.compatibilityanalyzer/17.5.4065",
+      "path": "microsoft.vssdk.compatibilityanalyzer/17.5.4074",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1432,7 +1432,7 @@
         "build/Microsoft.VsSDK.CompatibilityAnalyzer.props",
         "build/Microsoft.VsSDK.CompatibilityAnalyzer.targets",
         "license.txt",
-        "microsoft.vssdk.compatibilityanalyzer.17.5.4065.nupkg.sha512",
+        "microsoft.vssdk.compatibilityanalyzer.17.5.4074.nupkg.sha512",
         "microsoft.vssdk.compatibilityanalyzer.nuspec",
         "tools/net472/Microsoft.VisualStudio.Sdk.CompatibilityAnalyzerTasks.dll",
         "tools/net472/VsixCompatibilityAnalyzer.dll",
@@ -1873,7 +1873,7 @@
         "version.txt"
       ]
     },
-    "Roslintor.Analyzers/1.0.0": {
+    "Roslintor/1.0.1.9": {
       "type": "project",
       "path": "../Roslintor/Roslintor.Analyzers.csproj",
       "msbuildProject": "../Roslintor/Roslintor.Analyzers.csproj"
@@ -1891,8 +1891,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Microsoft.VSSDK.BuildTools >= 17.5.4065",
-      "Roslintor.Analyzers >= 1.0.0",
+      "Microsoft.VSSDK.BuildTools >= 17.5.4074",
+      "Roslintor >= 1.0.1.9",
       "Roslintor.CodeFixes >= 1.0.0"
     ]
   },
@@ -1952,7 +1952,7 @@
           "Microsoft.VSSDK.BuildTools": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[17.5.4065, )"
+            "version": "[17.5.4074, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
