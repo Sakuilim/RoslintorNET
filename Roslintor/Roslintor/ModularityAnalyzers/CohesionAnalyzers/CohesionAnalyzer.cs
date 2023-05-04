@@ -25,7 +25,7 @@ namespace Roslintor.Analyzers.ModularityAnalyzers
            MessageFormat,
            Category,
            DiagnosticSeverity.Warning,
-           isEnabledByDefault: true,
+           isEnabledByDefault: false,
            description: Description);
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);

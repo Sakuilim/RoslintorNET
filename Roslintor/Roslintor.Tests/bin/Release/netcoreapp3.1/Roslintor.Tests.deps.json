@@ -18,9 +18,8 @@
           "Microsoft.CodeAnalysis.VisualBasic.CodeFix.Testing.MSTest": "1.1.1",
           "Microsoft.CodeAnalysis.VisualBasic.CodeRefactoring.Testing.MSTest": "1.1.1",
           "Microsoft.NET.Test.Sdk": "17.5.0",
-          "Roslintor": "1.0.1.8",
-          "Roslintor.CodeFixes": "1.0.0",
-          "Roslintor.Analyzers": "1.0.0.0"
+          "Roslintor.Analyzers": "1.0.0",
+          "Roslintor.CodeFixes": "1.0.0"
         },
         "runtime": {
           "Roslintor.Tests.dll": {}
@@ -2092,7 +2091,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Roslintor/1.0.1.8": {
+      "Roslintor.Analyzers/1.0.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "4.5.0",
           "Roslintor.Helpers": "1.0.0"
@@ -2104,7 +2103,7 @@
       "Roslintor.CodeFixes/1.0.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor": "1.0.1.8"
+          "Roslintor.Analyzers": "1.0.0"
         },
         "runtime": {
           "Roslintor.CodeFixes.dll": {}
@@ -2116,14 +2115,6 @@
         },
         "runtime": {
           "Roslintor.Helpers.dll": {}
-        }
-      },
-      "Roslintor.Analyzers/1.0.0.0": {
-        "runtime": {
-          "Roslintor.Analyzers.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       }
     }
@@ -3135,7 +3126,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Roslintor/1.0.1.8": {
+    "Roslintor.Analyzers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3147,11 +3138,6 @@
     },
     "Roslintor.Helpers/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Roslintor.Analyzers/1.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
