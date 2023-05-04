@@ -91,3 +91,4 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\obj
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\obj\Release\net472\extension.vsixmanifest
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\obj\Release\net472\files.json
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\obj\Release\net472\createTemplateManifests.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Release\net472\Roslintor.Helpers.pdb

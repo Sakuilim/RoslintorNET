@@ -1469,18 +1469,6 @@
           }
         }
       },
-      "Roslintor.Helpers/1.0.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Roslintor.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Roslintor.Helpers.dll": {}
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -3164,6 +3152,19 @@
         },
         "runtime": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
+        }
+      },
+      "Roslintor.Helpers/1.0.2": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Roslintor.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roslintor.Helpers.dll": {}
         }
       }
     }
@@ -5532,18 +5533,6 @@
         "lib/netstandard2.0/NuGet.Versioning.xml",
         "nuget.versioning.5.6.0.nupkg.sha512",
         "nuget.versioning.nuspec"
-      ]
-    },
-    "Roslintor.Helpers/1.0.2": {
-      "sha512": "JdXh2fBzKZ0FFzcdF9ehtr+mbZx+pkHcnQpRVGIETdM2drv5CCf+T8gs/o+ZUsD3SDPLpCtHpj/q/oLe4Jqi1g==",
-      "type": "package",
-      "path": "roslintor.helpers/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Roslintor.Helpers.dll",
-        "roslintor.helpers.1.0.2.nupkg.sha512",
-        "roslintor.helpers.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -9437,6 +9426,11 @@
       "type": "project",
       "path": "../Roslintor.CodeFixes/Roslintor.CodeFixes.csproj",
       "msbuildProject": "../Roslintor.CodeFixes/Roslintor.CodeFixes.csproj"
+    },
+    "Roslintor.Helpers/1.0.2": {
+      "type": "project",
+      "path": "../../Roslintor.Helpers/Roslintor.Helpers.csproj",
+      "msbuildProject": "../../Roslintor.Helpers/Roslintor.Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {

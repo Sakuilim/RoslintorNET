@@ -270,3 +270,4 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\ob
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Release\netcoreapp3.1\Roslintor.Tests.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Release\netcoreapp3.1\Roslintor.Tests.pdb
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Release\netcoreapp3.1\Roslintor.Tests.genruntimeconfig.cache
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\Roslintor.Helpers.pdb

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6aSaCBoK+CeJ1wHFuyDorFtyMNCf2njXgj1XvHvz8m9Mt51AD5XiLcrXDUpvHNBeOKYJFcPdG4LkBMNO7uFy1Q==",
+  "dgSpecHash": "YAY8tkAYX4LEspCpK6eYNCFtQN1MXUlmhwojdm5VVJa5A+4yQtewx9YtNrGm4vq5XlKP4qCpeJK1yxqzPIj/Jg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.Analyzers.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,6 @@
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0\\microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.2\\roslintor.helpers.1.0.2.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
@@ -17,7 +16,8 @@
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.reflection.metadata\\6.0.1\\system.reflection.metadata.6.0.1.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.2\\roslintor.helpers.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }
