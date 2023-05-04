@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpAnalyzerVerifier<
-    Roslintor.Analyzers.NamingAnalyzers.MethodSize80Analyzer>;
+    Roslintor.Analyzers.SizeAnalyzers.MethodSize80Analyzer>;
 
 namespace Roslintor.Tests
 {

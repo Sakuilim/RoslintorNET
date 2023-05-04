@@ -1981,8 +1981,8 @@
     },
     "Roslintor.Helpers/1.0.2": {
       "type": "project",
-      "path": "../../Roslintor.Helpers/Roslintor.Helpers.csproj",
-      "msbuildProject": "../../Roslintor.Helpers/Roslintor.Helpers.csproj"
+      "path": "../Roslintor.Helpers/Roslintor.Helpers.csproj",
+      "msbuildProject": "../Roslintor.Helpers/Roslintor.Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {

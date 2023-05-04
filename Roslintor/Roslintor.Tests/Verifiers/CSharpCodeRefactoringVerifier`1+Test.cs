@@ -1,6 +1,7 @@
 ﻿using Microsoft.CodeAnalysis.CodeRefactorings;
 using Microsoft.CodeAnalysis.CSharp.Testing;
 using Microsoft.CodeAnalysis.Testing.Verifiers;
+using Roslintor.Tests.Verifiers;
 
 namespace Roslintor.Test
 {

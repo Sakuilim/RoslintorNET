@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Roslintor.Helpers\Roslintor.Helpers.csproj" />
+    <ProjectReference Include="..\Roslintor.Helpers\Roslintor.Helpers.csproj" />
   </ItemGroup>
 
 </Project>

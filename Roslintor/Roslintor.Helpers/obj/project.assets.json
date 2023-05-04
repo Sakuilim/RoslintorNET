@@ -1379,11 +1379,11 @@
   "project": {
     "version": "1.0.2",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor.Helpers\\Roslintor.Helpers.csproj",
+      "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Helpers\\Roslintor.Helpers.csproj",
       "projectName": "Roslintor.Helpers",
-      "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor.Helpers\\Roslintor.Helpers.csproj",
+      "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Helpers\\Roslintor.Helpers.csproj",
       "packagesPath": "C:\\Users\\Marius Milius\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor.Helpers\\obj\\",
+      "outputPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Helpers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

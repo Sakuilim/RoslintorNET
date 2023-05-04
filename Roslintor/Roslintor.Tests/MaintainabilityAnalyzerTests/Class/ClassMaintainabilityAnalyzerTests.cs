@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpAnalyzerVerifier<
     Roslintor.Analyzers.MaintainabilityAnalyzers.Class.ClassMaintainabilityAnalyzer>;
 
-namespace Roslintor.Tests.MaintainabilityAnalyzerTests
+namespace Roslintor.Tests.MaintainabilityAnalyzerTests.Class
 {
     [TestClass]
     public class ClassMaintainabilityAnalyzerTests

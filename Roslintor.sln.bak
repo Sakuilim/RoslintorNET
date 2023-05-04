@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Analyzers", "Roslintor\Roslintor\Roslintor.Analyzers.csproj", "{5CDDA232-4FC8-44DB-AB88-F6336DBC8A86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.CodeFixes", "Roslintor\Roslintor.CodeFixes\Roslintor.CodeFixes.csproj", "{BE00C9D0-C86E-4045-991E-A16335145C4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Package", "Roslintor\Roslintor.Package\Roslintor.Package.csproj", "{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Vsix", "Roslintor\Roslintor.Vsix\Roslintor.Vsix.csproj", "{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roslintor.Tests", "Roslintor\Roslintor.Tests\Roslintor.Tests.csproj", "{DF6501A9-8626-4949-8BA3-6225717F74C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslintor.Helpers", "Roslintor.Helpers\Roslintor.Helpers.csproj", "{BDD4087A-E72D-4FC8-BB19-84B60654318D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CDDA232-4FC8-44DB-AB88-F6336DBC8A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDDA232-4FC8-44DB-AB88-F6336DBC8A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDDA232-4FC8-44DB-AB88-F6336DBC8A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDDA232-4FC8-44DB-AB88-F6336DBC8A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE00C9D0-C86E-4045-991E-A16335145C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE00C9D0-C86E-4045-991E-A16335145C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE00C9D0-C86E-4045-991E-A16335145C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE00C9D0-C86E-4045-991E-A16335145C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E3CDC1-CF14-4B1A-AA4C-91FBC33D7BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3ADE1BB-CD76-41F4-B789-5972D09C12D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF6501A9-8626-4949-8BA3-6225717F74C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD4087A-E72D-4FC8-BB19-84B60654318D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD4087A-E72D-4FC8-BB19-84B60654318D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD4087A-E72D-4FC8-BB19-84B60654318D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD4087A-E72D-4FC8-BB19-84B60654318D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCBD2DAD-08BD-439C-BEBA-A77F690062A2}
+	EndGlobalSection
+EndGlobal

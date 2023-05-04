@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Roslintor.Analyzers.ModularityAnalyzers
+namespace Roslintor.Analyzers.ModularityAnalyzers.CouplingAnalyzers
 {
     [ExcludeFromCodeCoverage]
     [DiagnosticAnalyzer(LanguageNames.CSharp)]

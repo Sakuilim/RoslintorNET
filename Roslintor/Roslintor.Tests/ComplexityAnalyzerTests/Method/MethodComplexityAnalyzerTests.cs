@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpAnalyzerVerifier<
     Roslintor.Analyzers.ComplexityAnalyzers.Method.MethodCyclomaticComplexityAnalyzer>;
 
-namespace Roslintor.Tests.ComplexityAnalyzerTests
+namespace Roslintor.Tests.ComplexityAnalyzerTests.Method
 {
     [TestClass]
     public class MethodComplexityAnalyzerTests

@@ -41,6 +41,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Roslintor.CodeFixes\Roslintor.CodeFixes.csproj" />
+    <ProjectReference Include="..\Roslintor.Helpers\Roslintor.Helpers.csproj" />
     <ProjectReference Include="..\Roslintor\Roslintor.Analyzers.csproj" />
   </ItemGroup>
   <ItemGroup>

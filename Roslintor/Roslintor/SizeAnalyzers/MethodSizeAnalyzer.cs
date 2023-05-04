@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace Roslintor.Analyzers.NamingAnalyzers
+namespace Roslintor.Analyzers.SizeAnalyzers
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class MethodSizeAnalyzer : DiagnosticAnalyzer
