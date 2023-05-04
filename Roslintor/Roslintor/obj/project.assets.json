@@ -153,6 +153,18 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Roslintor.Helpers/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Roslintor.Helpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Roslintor.Helpers.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -280,19 +292,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "Roslintor.Helpers/1.0.2": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
-        },
-        "compile": {
-          "bin/placeholder/Roslintor.Helpers.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Roslintor.Helpers.dll": {}
         }
       }
     }
@@ -1132,6 +1131,18 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Roslintor.Helpers/1.0.2": {
+      "sha512": "JdXh2fBzKZ0FFzcdF9ehtr+mbZx+pkHcnQpRVGIETdM2drv5CCf+T8gs/o+ZUsD3SDPLpCtHpj/q/oLe4Jqi1g==",
+      "type": "package",
+      "path": "roslintor.helpers/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Roslintor.Helpers.dll",
+        "roslintor.helpers.1.0.2.nupkg.sha512",
+        "roslintor.helpers.nuspec"
+      ]
+    },
     "System.Buffers/4.5.1": {
       "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
@@ -1375,11 +1386,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "Roslintor.Helpers/1.0.2": {
-      "type": "project",
-      "path": "../Roslintor.Helpers/Roslintor.Helpers.csproj",
-      "msbuildProject": "../Roslintor.Helpers/Roslintor.Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1423,11 +1429,7 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {
-            "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Helpers\\Roslintor.Helpers.csproj": {
-              "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Helpers\\Roslintor.Helpers.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

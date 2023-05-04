@@ -11,7 +11,7 @@
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Roslintor.Vsix.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Roslintor.Analyzers.dll" />
     <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Roslintor.Analyzers.dll" />
     <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Roslintor.CodeFixes.dll" />
     <Asset Type="Microsoft.VisualStudio.Analyzer" Path="Roslintor.CodeFixes.dll" />

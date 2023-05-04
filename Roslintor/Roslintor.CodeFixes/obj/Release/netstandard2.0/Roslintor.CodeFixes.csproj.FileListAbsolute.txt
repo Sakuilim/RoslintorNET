@@ -13,5 +13,3 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixe
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Release\netstandard2.0\Roslintor.CodeFixes.csproj.CopyComplete
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Release\netstandard2.0\Roslintor.CodeFixes.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Release\netstandard2.0\Roslintor.CodeFixes.pdb
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Release\netstandard2.0\Roslintor.Helpers.dll
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Release\netstandard2.0\Roslintor.Helpers.pdb
