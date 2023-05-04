@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Roslintor.Helpers.Helpers
+﻿namespace Roslintor.Helpers.Helpers
 {
     public static class MICalculator
     {

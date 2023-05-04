@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor.Helpers\\Roslintor.Helpers.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor.Helpers\\Roslintor.Helpers.csproj",
         "projectName": "Roslintor.Helpers",
@@ -45,6 +45,12 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
             "Microsoft.CodeAnalysis.CSharp": {
               "target": "Package",
               "version": "[4.5.0, )"

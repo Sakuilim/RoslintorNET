@@ -10,7 +10,7 @@
   <PropertyGroup>
 
     <PackageId>Roslintor</PackageId>
-    <PackageVersion>1.0.2</PackageVersion>
+    <PackageVersion>1.0.2.4</PackageVersion>
     <Authors>Sakuilim</Authors>
     <PackageProjectUrl>https://github.com/Sakuilim/RoslintorNET</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Sakuilim/RoslintorNET</RepositoryUrl>
@@ -21,7 +21,7 @@
     <DevelopmentDependency>true</DevelopmentDependency>
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <Description>
-      Update for 1.0.2 Roslintor analyzer
+      Update for 1.0.2.4 Roslintor analyzer
     </Description>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
@@ -31,6 +31,13 @@
 
     <Title>Roslintor</Title>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Roslintor.CodeFixes\Roslintor.CodeFixes.csproj" />

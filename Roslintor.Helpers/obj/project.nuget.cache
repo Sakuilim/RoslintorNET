@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "e53AwbDmOxwWcSfKbcOMOU5Q5GzkpKx9/SK6FTgHVHIj6NGFbErgPkEAQwNgjNaBhyxG6dutlLgOVbe29eIRbg==",
+  "dgSpecHash": "OZYeioSYbm6sVX5wdF6daZpLLGV9+mnTbKMExL3gGJ2Gf+hw1lwFNg6u8jEfMV3nyNre5snDDfAav2wLDLIbhA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor.Helpers\\Roslintor.Helpers.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0\\microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

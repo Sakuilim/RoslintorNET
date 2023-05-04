@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ANvLVFYMz+QnQSOtyaC6CPMK/uS3Whf4CGgB0WHssKrsBbj2TcR/9eKoPCJoRdGDZqzXFDmu9UstBgPTze83hw==",
+  "dgSpecHash": "JkDmkv119LOhw4+razgg24uOgqSVTE3D3/SOhADvh6dmlbTI4aqqaPsaPvUS2h6wWLpQCQxDjIjsa0ZAawXBTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Vsix\\Roslintor.Vsix.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marius Milius\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.bannedapianalyzers\\3.3.2\\microsoft.codeanalysis.bannedapianalyzers.3.3.2.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0\\microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
@@ -16,6 +16,7 @@
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.visualstudio.threading.analyzers\\16.10.56\\microsoft.visualstudio.threading.analyzers.16.10.56.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.vssdk.buildtools\\17.5.4074\\microsoft.vssdk.buildtools.17.5.4074.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.vssdk.compatibilityanalyzer\\17.5.4074\\microsoft.vssdk.compatibilityanalyzer.17.5.4074.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.1\\roslintor.helpers.1.0.1.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",
@@ -31,8 +32,7 @@
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.0\\roslintor.helpers.1.0.0.nupkg.sha512"
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

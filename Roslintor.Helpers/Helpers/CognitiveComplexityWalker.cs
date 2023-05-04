@@ -1,6 +1,5 @@
 ﻿using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace Roslintor.Helpers.Helpers

@@ -15,7 +15,7 @@ namespace Roslintor.Analyzers.ParameterAnalyzers
         private const string MessageFormat = "Method '{0}' has {1} arguments, which exceeds the maximum limit of {2}";
         private const string Description = "Methods with excessive amount of arguments can be difficult to understand and maintain.";
 
-        private const int MaxArgumentCount = 4;
+        private const int MaxArgumentCount = 5;
 
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(

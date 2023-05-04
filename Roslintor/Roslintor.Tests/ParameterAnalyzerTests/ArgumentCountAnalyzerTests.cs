@@ -47,14 +47,14 @@ namespace Roslintor.Tests.ParameterAnalyzerTests
             {
                 public class TestClass
                 {   
-                    public void {|#0:MethodName|}(string name, int number, double amount, string firstName, string lastName)
+                    public void {|#0:MethodName|}(string name, int number, double amount, string firstName, string lastName, string someName)
                     {
                         
                     }    
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("AC001").WithLocation(0).WithArguments("MethodName", "5", "4");
+            var expected = VerifyCS.Diagnostic("AC001").WithLocation(0).WithArguments("MethodName", "6", "5");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
 
