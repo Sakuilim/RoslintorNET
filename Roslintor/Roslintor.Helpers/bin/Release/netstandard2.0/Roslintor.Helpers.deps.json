@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Roslintor.Helpers/1.0.2": {
+      "Roslintor.Helpers/1.0.3": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
           "Microsoft.CodeAnalysis.CSharp": "4.5.0",
@@ -220,7 +220,7 @@
     }
   },
   "libraries": {
-    "Roslintor.Helpers/1.0.2": {
+    "Roslintor.Helpers/1.0.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

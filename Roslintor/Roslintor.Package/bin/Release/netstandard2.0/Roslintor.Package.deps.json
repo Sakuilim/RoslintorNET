@@ -266,14 +266,14 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "Roslintor.Helpers/1.0.2": {
+      "Roslintor.Helpers/1.0.3": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/Roslintor.Helpers.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
           }
         }
       },
@@ -447,7 +447,7 @@
       "Roslintor.Analyzers/1.0.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "4.5.0",
-          "Roslintor.Helpers": "1.0.2"
+          "Roslintor.Helpers": "1.0.3"
         },
         "runtime": {
           "Roslintor.Analyzers.dll": {}
@@ -533,12 +533,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Roslintor.Helpers/1.0.2": {
+    "Roslintor.Helpers/1.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JdXh2fBzKZ0FFzcdF9ehtr+mbZx+pkHcnQpRVGIETdM2drv5CCf+T8gs/o+ZUsD3SDPLpCtHpj/q/oLe4Jqi1g==",
-      "path": "roslintor.helpers/1.0.2",
-      "hashPath": "roslintor.helpers.1.0.2.nupkg.sha512"
+      "sha512": "sha512-NZLoEGRrgY4g2GD06f5JARHJrKXdm0GFf2M1ylZRT2d+DltxSsghupWNFLlw7FArW4ZWsmCxX+PUcrbau9wmFA==",
+      "path": "roslintor.helpers/1.0.3",
+      "hashPath": "roslintor.helpers.1.0.3.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

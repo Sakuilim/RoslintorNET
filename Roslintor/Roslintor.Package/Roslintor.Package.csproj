@@ -40,8 +40,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Roslintor.Analyzers\Roslintor.Analyzers.csproj" />
     <ProjectReference Include="..\Roslintor.CodeFixes\Roslintor.CodeFixes.csproj" />
-    <ProjectReference Include="..\Roslintor\Roslintor.Analyzers.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="tools\*.ps1" CopyToOutputDirectory="PreserveNewest" Pack="true" PackagePath="" />

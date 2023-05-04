@@ -270,4 +270,3 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bi
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.Analyzers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.Analyzers.pdb
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.Helpers.dll
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Debug\netcoreapp3.1\Roslintor.Helpers.pdb

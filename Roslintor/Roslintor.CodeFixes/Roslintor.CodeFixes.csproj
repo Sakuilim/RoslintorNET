@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Roslintor\Roslintor.Analyzers.csproj" />
+    <ProjectReference Include="..\Roslintor.Analyzers\Roslintor.Analyzers.csproj" />
   </ItemGroup>
 
   <ItemGroup>

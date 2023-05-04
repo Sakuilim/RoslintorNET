@@ -1469,7 +1469,7 @@
           }
         }
       },
-      "Roslintor.Helpers/1.0.2": {
+      "Roslintor.Helpers/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "4.5.0"
@@ -3143,7 +3143,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "4.5.0",
-          "Roslintor.Helpers": "1.0.2"
+          "Roslintor.Helpers": "1.0.3"
         },
         "compile": {
           "bin/placeholder/Roslintor.Analyzers.dll": {}
@@ -5534,15 +5534,15 @@
         "nuget.versioning.nuspec"
       ]
     },
-    "Roslintor.Helpers/1.0.2": {
-      "sha512": "JdXh2fBzKZ0FFzcdF9ehtr+mbZx+pkHcnQpRVGIETdM2drv5CCf+T8gs/o+ZUsD3SDPLpCtHpj/q/oLe4Jqi1g==",
+    "Roslintor.Helpers/1.0.3": {
+      "sha512": "NZLoEGRrgY4g2GD06f5JARHJrKXdm0GFf2M1ylZRT2d+DltxSsghupWNFLlw7FArW4ZWsmCxX+PUcrbau9wmFA==",
       "type": "package",
-      "path": "roslintor.helpers/1.0.2",
+      "path": "roslintor.helpers/1.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Roslintor.Helpers.dll",
-        "roslintor.helpers.1.0.2.nupkg.sha512",
+        "roslintor.helpers.1.0.3.nupkg.sha512",
         "roslintor.helpers.nuspec"
       ]
     },
@@ -9430,8 +9430,8 @@
     },
     "Roslintor.Analyzers/1.0.0": {
       "type": "project",
-      "path": "../Roslintor/Roslintor.Analyzers.csproj",
-      "msbuildProject": "../Roslintor/Roslintor.Analyzers.csproj"
+      "path": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj",
+      "msbuildProject": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj"
     },
     "Roslintor.CodeFixes/1.0.0": {
       "type": "project",
@@ -9490,11 +9490,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Analyzers\\Roslintor.Analyzers.csproj": {
+              "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Analyzers\\Roslintor.Analyzers.csproj"
+            },
             "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj": {
               "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.CodeFixes\\Roslintor.CodeFixes.csproj"
-            },
-            "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.Analyzers.csproj": {
-              "projectPath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor\\Roslintor.Analyzers.csproj"
             }
           }
         }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jafRgmzCTw06YNfdIsgJVtb1juWlBrD/ABjA/fEKdfbrGRAqHVabHEWc84tunkQPtA5M2crY6WlZi0Aa8NTFQw==",
+  "dgSpecHash": "SF8zaEALD/LzaLB6pt9c1MDzcMQxx3Ye6EpXYWFKzYSLO5gycjyUVk0bnZqvMe8U2i6cfdVrqLGorIlVn2iFrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Tests\\Roslintor.Tests.csproj",
   "expectedPackageFiles": [
@@ -54,7 +54,7 @@
     "C:\\Users\\Marius Milius\\.nuget\\packages\\nuget.protocol\\5.6.0\\nuget.protocol.5.6.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\nuget.resolver\\5.6.0\\nuget.resolver.5.6.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\nuget.versioning\\5.6.0\\nuget.versioning.5.6.0.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.2\\roslintor.helpers.1.0.2.nupkg.sha512",
+    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.3\\roslintor.helpers.1.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

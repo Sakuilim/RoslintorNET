@@ -1,0 +1,12 @@
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\bin\Debug\netstandard2.0\Roslintor.Analyzers.deps.json
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\bin\Debug\netstandard2.0\Roslintor.Analyzers.dll
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\bin\Debug\netstandard2.0\Roslintor.Analyzers.pdb
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.csproj.AssemblyReference.cache
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.Resources.resources
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.csproj.GenerateResource.cache
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.AssemblyInfoInputs.cache
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.AssemblyInfo.cs
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.csproj.CoreCompileInputs.cache
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.dll
+c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\obj\Debug\netstandard2.0\Roslintor.Analyzers.pdb
