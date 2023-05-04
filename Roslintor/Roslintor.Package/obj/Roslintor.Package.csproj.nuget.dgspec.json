@@ -82,7 +82,7 @@
       }
     },
     "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Package\\Roslintor.Package.csproj": {
-      "version": "1.0.2.4",
+      "version": "1.0.2.5",
       "restore": {
         "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Package\\Roslintor.Package.csproj",
         "projectName": "Roslintor",
@@ -216,7 +216,7 @@
             },
             "Roslintor.Helpers": {
               "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[1.0.2, )"
             }
           },
           "imports": [
