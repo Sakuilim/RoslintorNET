@@ -56,7 +56,6 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bi
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\NuGet.Protocol.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\NuGet.Resolver.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\NuGet.Versioning.dll
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\Roslintor.Helpers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\System.ComponentModel.Composition.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll

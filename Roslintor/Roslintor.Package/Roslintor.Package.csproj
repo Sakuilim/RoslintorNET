@@ -10,18 +10,15 @@
   <PropertyGroup>
 
     <PackageId>Roslintor</PackageId>
-    <PackageVersion>1.0.3</PackageVersion>
+    <PackageVersion>1.0.3.5</PackageVersion>
     <Authors>Sakuilim</Authors>
     <PackageProjectUrl>https://github.com/Sakuilim/RoslintorNET</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Sakuilim/RoslintorNET</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>Roslintor</Description>
     <Copyright>Copyright</Copyright>
-    <PackageTags>First Version of Analyzers</PackageTags>
-    <DevelopmentDependency>true</DevelopmentDependency>
-    <NoPackageAnalysis>true</NoPackageAnalysis>
     <Description>
-      Update for 1.0.3 Roslintor analyzer
+      Update for 1.0.3.5 Roslintor analyzer
     </Description>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z9qHZaXsCrvWjy+rQ0ZfHez3UauBvvz4UQVIvF2G/1vQEXeavAjMU9Eg+pDB0rXFsvd/fMG8cYs2YFTffDqIhg==",
+  "dgSpecHash": "tKyCCnW6A6s2V/1QIYfPmVjokkhUM1Dkd3N3KCWZ3Uox6m5QFmpip1iAAh5o/bvR105MOIqUMHOeTIFUaptMOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Vsix\\Roslintor.Vsix.csproj",
   "expectedPackageFiles": [
@@ -16,7 +16,6 @@
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.visualstudio.threading.analyzers\\16.10.56\\microsoft.visualstudio.threading.analyzers.16.10.56.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.vssdk.buildtools\\17.5.4074\\microsoft.vssdk.buildtools.17.5.4074.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.vssdk.compatibilityanalyzer\\17.5.4074\\microsoft.vssdk.compatibilityanalyzer.17.5.4074.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.3\\roslintor.helpers.1.0.3.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",

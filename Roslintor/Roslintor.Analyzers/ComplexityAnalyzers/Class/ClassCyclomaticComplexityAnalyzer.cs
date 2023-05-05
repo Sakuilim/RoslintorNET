@@ -44,9 +44,12 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Class
 
             var complexity = 0;
 
-            foreach(var method in classDeclaration.ChildNodes())
+            foreach (var methodNode in classDeclaration.ChildNodes())
             {
-                complexity += CyclomaticComplexityHelper.CalculateComplexity(method as MethodDeclarationSyntax);
+                if (methodNode is MethodDeclarationSyntax method)
+                {
+                    complexity += CyclomaticComplexityHelper.CalculateComplexity(method);
+                }
             }
 
             if (complexity >= CyclomaticComplexityThreshold) // Threshold for high complexity

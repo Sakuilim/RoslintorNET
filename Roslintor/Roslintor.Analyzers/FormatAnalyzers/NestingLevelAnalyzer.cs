@@ -45,7 +45,7 @@ namespace Roslintor.Analyzers.FormatAnalyzers
 
             if (maxNestingLevel >= NestingLevelThreshold)
             {
-                context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.ValueText, NestingLevelThreshold));
+                context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.ValueText, NestingLevelThreshold/2));
             }
         }
 

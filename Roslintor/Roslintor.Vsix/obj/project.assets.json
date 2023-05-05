@@ -326,18 +326,6 @@
           "build/Microsoft.VsSDK.CompatibilityAnalyzer.targets": {}
         }
       },
-      "Roslintor.Helpers/1.0.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Roslintor.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Roslintor.Helpers.dll": {}
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -607,12 +595,11 @@
           }
         }
       },
-      "Roslintor.Analyzers/1.0.0": {
+      "Roslintor.Analyzers/1.0.3.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0",
-          "Roslintor.Helpers": "1.0.3"
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
         },
         "compile": {
           "bin/placeholder/Roslintor.Analyzers.dll": {}
@@ -626,7 +613,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.0"
+          "Roslintor.Analyzers": "1.0.3.3"
         },
         "compile": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
@@ -1791,18 +1778,6 @@
         "tools/net6.0/VsixCompatibilityAnalyzer.dll"
       ]
     },
-    "Roslintor.Helpers/1.0.3": {
-      "sha512": "NZLoEGRrgY4g2GD06f5JARHJrKXdm0GFf2M1ylZRT2d+DltxSsghupWNFLlw7FArW4ZWsmCxX+PUcrbau9wmFA==",
-      "type": "package",
-      "path": "roslintor.helpers/1.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Roslintor.Helpers.dll",
-        "roslintor.helpers.1.0.3.nupkg.sha512",
-        "roslintor.helpers.nuspec"
-      ]
-    },
     "System.Buffers/4.5.1": {
       "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
@@ -2235,7 +2210,7 @@
         "version.txt"
       ]
     },
-    "Roslintor.Analyzers/1.0.0": {
+    "Roslintor.Analyzers/1.0.3.3": {
       "type": "project",
       "path": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj",
       "msbuildProject": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj"
@@ -2250,7 +2225,7 @@
     ".NETFramework,Version=v4.7.2": [
       "Microsoft.CodeAnalysis.Analyzers >= 3.3.4",
       "Microsoft.VSSDK.BuildTools >= 17.5.4074",
-      "Roslintor.Analyzers >= 1.0.0",
+      "Roslintor.Analyzers >= 1.0.3.3",
       "Roslintor.CodeFixes >= 1.0.0"
     ]
   },
@@ -2319,7 +2294,7 @@
             "version": "[17.5.4074, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

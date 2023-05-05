@@ -43,12 +43,16 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Class
             var cyclomaticComplexity = 0;
             var linesOfCode = 0;
 
-            foreach (var method in classDeclaration.ChildNodes())
+            foreach (var methodNode in classDeclaration.ChildNodes())
             {
-                halsteadVolume += HalsteadVolumeVisitor.ComputeHalsteadVolume(method as MethodDeclarationSyntax);
-                cyclomaticComplexity += CyclomaticComplexityHelper.CalculateComplexity(method as MethodDeclarationSyntax);
-                linesOfCode += classDeclaration.GetText().Lines.Count;
+                if (methodNode is MethodDeclarationSyntax method)
+                {
+                    halsteadVolume += HalsteadVolumeVisitor.ComputeHalsteadVolume(method);
+                    cyclomaticComplexity += CyclomaticComplexityHelper.CalculateComplexity(method);
+                }
             }
+
+            linesOfCode += classDeclaration.GetText().Lines.Count;
 
             var mi = MICalculator.CalculateMI(halsteadVolume, cyclomaticComplexity, linesOfCode);
 

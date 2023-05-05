@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uFAsydcsIXBqM+iaPjneiKdcpl7L4C3yxVGy7pWXMr+hRCzJeLdfe7k29W3bcv4tD9EMdA0jx7t+HWCtiC6qhw==",
+  "dgSpecHash": "2MunbZEHn5JCfdePuUFqbDopNVBiqvXKkP7svrLfVHNhYKVks116DHhFKU/T/3z3nZCEhVxghWz42b7PlCe/Tg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Package\\Roslintor.Package.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,6 @@
     "C:\\Users\\Marius Milius\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.5.0\\microsoft.codeanalysis.workspaces.common.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Marius Milius\\.nuget\\packages\\roslintor.helpers\\1.0.3\\roslintor.helpers.1.0.3.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Marius Milius\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",

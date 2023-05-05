@@ -1469,18 +1469,6 @@
           }
         }
       },
-      "Roslintor.Helpers/1.0.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Roslintor.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Roslintor.Helpers.dll": {}
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -3138,12 +3126,11 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Roslintor.Analyzers/1.0.0": {
+      "Roslintor.Analyzers/1.0.3.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0",
-          "Roslintor.Helpers": "1.0.3"
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
         },
         "compile": {
           "bin/placeholder/Roslintor.Analyzers.dll": {}
@@ -3157,7 +3144,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.0"
+          "Roslintor.Analyzers": "1.0.3.3"
         },
         "compile": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
@@ -5532,18 +5519,6 @@
         "lib/netstandard2.0/NuGet.Versioning.xml",
         "nuget.versioning.5.6.0.nupkg.sha512",
         "nuget.versioning.nuspec"
-      ]
-    },
-    "Roslintor.Helpers/1.0.3": {
-      "sha512": "NZLoEGRrgY4g2GD06f5JARHJrKXdm0GFf2M1ylZRT2d+DltxSsghupWNFLlw7FArW4ZWsmCxX+PUcrbau9wmFA==",
-      "type": "package",
-      "path": "roslintor.helpers/1.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Roslintor.Helpers.dll",
-        "roslintor.helpers.1.0.3.nupkg.sha512",
-        "roslintor.helpers.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -9428,7 +9403,7 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Roslintor.Analyzers/1.0.0": {
+    "Roslintor.Analyzers/1.0.3.3": {
       "type": "project",
       "path": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj",
       "msbuildProject": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj"
@@ -9452,7 +9427,7 @@
       "Microsoft.CodeAnalysis.VisualBasic.CodeFix.Testing.MSTest >= 1.1.1",
       "Microsoft.CodeAnalysis.VisualBasic.CodeRefactoring.Testing.MSTest >= 1.1.1",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
-      "Roslintor.Analyzers >= 1.0.0",
+      "Roslintor.Analyzers >= 1.0.3.3",
       "Roslintor.CodeFixes >= 1.0.0"
     ]
   },
@@ -9572,7 +9547,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
