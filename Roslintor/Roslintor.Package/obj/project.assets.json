@@ -553,7 +553,7 @@
           }
         }
       },
-      "Roslintor.Analyzers/1.0.3.3": {
+      "Roslintor.Analyzers/1.0.5": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -571,7 +571,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.3.3"
+          "Roslintor.Analyzers": "1.0.5"
         },
         "compile": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
@@ -1974,7 +1974,7 @@
         "version.txt"
       ]
     },
-    "Roslintor.Analyzers/1.0.3.3": {
+    "Roslintor.Analyzers/1.0.5": {
       "type": "project",
       "path": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj",
       "msbuildProject": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj"
@@ -1989,7 +1989,7 @@
     ".NETStandard,Version=v2.0": [
       "Microsoft.CodeAnalysis.Analyzers >= 3.3.4",
       "NETStandard.Library >= 2.0.3",
-      "Roslintor.Analyzers >= 1.0.3.3",
+      "Roslintor.Analyzers >= 1.0.5",
       "Roslintor.CodeFixes >= 1.0.0"
     ]
   },
@@ -1999,7 +1999,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.3.5",
+    "version": "1.0.5",
     "restore": {
       "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Package\\Roslintor.Package.csproj",
       "projectName": "Roslintor",

@@ -19,7 +19,7 @@
           "Microsoft.CodeAnalysis.VisualBasic.CodeFix.Testing.MSTest": "1.1.1",
           "Microsoft.CodeAnalysis.VisualBasic.CodeRefactoring.Testing.MSTest": "1.1.1",
           "Microsoft.NET.Test.Sdk": "17.5.0",
-          "Roslintor.Analyzers": "1.0.3.3",
+          "Roslintor.Analyzers": "1.0.5",
           "Roslintor.CodeFixes": "1.0.0"
         },
         "runtime": {
@@ -2092,7 +2092,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Roslintor.Analyzers/1.0.3.3": {
+      "Roslintor.Analyzers/1.0.5": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "4.5.0"
         },
@@ -2103,7 +2103,7 @@
       "Roslintor.CodeFixes/1.0.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.3.3"
+          "Roslintor.Analyzers": "1.0.5"
         },
         "runtime": {
           "Roslintor.CodeFixes.dll": {}
@@ -3118,7 +3118,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Roslintor.Analyzers/1.0.3.3": {
+    "Roslintor.Analyzers/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

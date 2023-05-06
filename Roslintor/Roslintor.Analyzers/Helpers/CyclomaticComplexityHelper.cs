@@ -16,7 +16,9 @@ namespace Roslintor.Helpers.Helpers
         {
             return node.IsKind(SyntaxKind.IfStatement) || node.IsKind(SyntaxKind.ForStatement) ||
                 node.IsKind(SyntaxKind.ForEachStatement) || node.IsKind(SyntaxKind.WhileStatement) ||
-                node.IsKind(SyntaxKind.SwitchStatement) || node.IsKind(SyntaxKind.CaseSwitchLabel);
+                node.IsKind(SyntaxKind.SwitchStatement) || node.IsKind(SyntaxKind.CaseSwitchLabel) ||
+                node.IsKind(SyntaxKind.ConditionalExpression) || node.IsKind(SyntaxKind.LogicalAndExpression) ||
+                node.IsKind(SyntaxKind.LogicalOrExpression);
         }
 
     }

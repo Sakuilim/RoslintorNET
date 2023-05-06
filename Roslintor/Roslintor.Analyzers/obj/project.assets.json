@@ -1377,7 +1377,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.3.3",
+    "version": "1.0.5",
     "restore": {
       "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Analyzers\\Roslintor.Analyzers.csproj",
       "projectName": "Roslintor.Analyzers",

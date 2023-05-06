@@ -51,7 +51,6 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Class
                     complexity += CyclomaticComplexityHelper.CalculateComplexity(method);
                 }
             }
-
             if (complexity >= CyclomaticComplexityThreshold) // Threshold for high complexity
             {
                 // Report diagnostic

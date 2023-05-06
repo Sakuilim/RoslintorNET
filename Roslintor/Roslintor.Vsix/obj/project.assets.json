@@ -595,7 +595,7 @@
           }
         }
       },
-      "Roslintor.Analyzers/1.0.3.3": {
+      "Roslintor.Analyzers/1.0.5": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -613,7 +613,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.3.3"
+          "Roslintor.Analyzers": "1.0.5"
         },
         "compile": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
@@ -2210,7 +2210,7 @@
         "version.txt"
       ]
     },
-    "Roslintor.Analyzers/1.0.3.3": {
+    "Roslintor.Analyzers/1.0.5": {
       "type": "project",
       "path": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj",
       "msbuildProject": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj"
@@ -2225,7 +2225,7 @@
     ".NETFramework,Version=v4.7.2": [
       "Microsoft.CodeAnalysis.Analyzers >= 3.3.4",
       "Microsoft.VSSDK.BuildTools >= 17.5.4074",
-      "Roslintor.Analyzers >= 1.0.3.3",
+      "Roslintor.Analyzers >= 1.0.5",
       "Roslintor.CodeFixes >= 1.0.0"
     ]
   },

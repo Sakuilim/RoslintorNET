@@ -16,7 +16,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
         private const string Description = "Cognitive complexity of this method is too high. Simplify your class to not be complex.";
         private const string Category = "Performance";
 
-        private const int CognitiveComplexityThreshold = 10;
+        private const int CognitiveComplexityThreshold = 15;
 
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(

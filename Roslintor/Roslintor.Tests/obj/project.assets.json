@@ -3126,7 +3126,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Roslintor.Analyzers/1.0.3.3": {
+      "Roslintor.Analyzers/1.0.5": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -3144,7 +3144,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.3.3"
+          "Roslintor.Analyzers": "1.0.5"
         },
         "compile": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
@@ -9403,7 +9403,7 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Roslintor.Analyzers/1.0.3.3": {
+    "Roslintor.Analyzers/1.0.5": {
       "type": "project",
       "path": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj",
       "msbuildProject": "../Roslintor.Analyzers/Roslintor.Analyzers.csproj"
@@ -9427,7 +9427,7 @@
       "Microsoft.CodeAnalysis.VisualBasic.CodeFix.Testing.MSTest >= 1.1.1",
       "Microsoft.CodeAnalysis.VisualBasic.CodeRefactoring.Testing.MSTest >= 1.1.1",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
-      "Roslintor.Analyzers >= 1.0.3.3",
+      "Roslintor.Analyzers >= 1.0.5",
       "Roslintor.CodeFixes >= 1.0.0"
     ]
   },

@@ -16,7 +16,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
         private const string MessageFormat = "Method '{0}' cyclomatic complexity is too high. Consider simplifying your method.";
         private const string Description = "Cyclomatic complexity of this method is too high. Simplify your class to not be complex.";
 
-        private const int CyclomaticComplexityThreshold = 6;
+        private const int CyclomaticComplexityThreshold = 7;
 
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(

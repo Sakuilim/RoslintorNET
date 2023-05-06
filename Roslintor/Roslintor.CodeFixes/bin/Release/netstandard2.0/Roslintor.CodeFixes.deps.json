@@ -12,7 +12,7 @@
           "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
           "NETStandard.Library": "2.0.3",
-          "Roslintor.Analyzers": "1.0.3.3"
+          "Roslintor.Analyzers": "1.0.5"
         },
         "runtime": {
           "Roslintor.CodeFixes.dll": {}
@@ -433,7 +433,7 @@
           }
         }
       },
-      "Roslintor.Analyzers/1.0.3.3": {
+      "Roslintor.Analyzers/1.0.5": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "4.5.0"
         },
@@ -624,7 +624,7 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
-    "Roslintor.Analyzers/1.0.3.3": {
+    "Roslintor.Analyzers/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

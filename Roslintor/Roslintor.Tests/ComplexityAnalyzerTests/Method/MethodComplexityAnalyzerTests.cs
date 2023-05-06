@@ -49,28 +49,33 @@ namespace Roslintor.Tests.ComplexityAnalyzerTests.Method
                 {   
                     public void {|#0:MethodName|}(string name)
                     {
-                        var x = 0;
-                        var k = 1;
-                        if (x > k)
+                        for (int o = 0; o < 15 + 1; o++)
                         {
-                            while(x > 0)
+                            for (int p = 0; p < 15 + 1; p++)
                             {
-                                x = 2;
+                                if (o == 5)
+                                {
+                                    p++;
+                                }
+                                else
+                                {
+                                    o++;
+                                }
                             }
                         }
-                        if(k > x)
+                        var x = 0;
+                        var k = 1;
+                        if (x > k || x == k)
                         {
-                            for(int i=0;i<x; i++)
-                            {
-                                k = 1;
-                            }
+                          x = 2;
+                        }
+                        if(k > x && k != x)
+                        {
+                            k = 1;
                         }
                         if(k == x)
                         {
-                            while (k < 0)
-                            {
-                                x++;
-                            }
+                            x++;
                         }
                     }    
                 }
