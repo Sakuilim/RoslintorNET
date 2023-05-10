@@ -81,7 +81,7 @@ namespace Roslintor.Tests.ComplexityAnalyzerTests.Method
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("CAR001").WithLocation(0).WithArguments("MethodName");
+            var expected = VerifyCS.Diagnostic("CAR001").WithLocation(0).WithArguments("MethodName","9");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
 

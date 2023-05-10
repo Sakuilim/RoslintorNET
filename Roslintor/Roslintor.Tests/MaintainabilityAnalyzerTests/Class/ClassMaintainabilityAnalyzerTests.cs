@@ -179,7 +179,7 @@ namespace Roslintor.Tests.MaintainabilityAnalyzerTests.Class
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("MA002").WithLocation(0).WithArguments("TestClass");
+            var expected = VerifyCS.Diagnostic("MA002").WithLocation(0).WithArguments("TestClass","56");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
 

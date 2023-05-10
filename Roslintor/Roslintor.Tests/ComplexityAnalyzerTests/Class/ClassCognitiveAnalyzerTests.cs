@@ -180,7 +180,7 @@ namespace Roslintor.Tests.ComplexityAnalyzerTests.Class
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("CAR003").WithLocation(0).WithArguments("TestClass");
+            var expected = VerifyCS.Diagnostic("CAR003").WithLocation(0).WithArguments("TestClass", "60");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
 

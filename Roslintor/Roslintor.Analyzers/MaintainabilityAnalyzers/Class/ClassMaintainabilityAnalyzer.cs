@@ -1,4 +1,5 @@
-﻿using System.Collections.Immutable;
+﻿using System;
+using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -13,7 +14,7 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Class
         public const string DiagnosticId = "MA002";
         private const string Category = "Maintainability";
         private const string Title = "Simplify this class to improve Maintainability Index";
-        private const string MessageFormat = "Class '{0}' Maintainability Index is too low. Consider simplifying your class.";
+        private const string MessageFormat = "Class '{0}' Maintainability Index is {1} and too low. Consider simplifying your class.";
         private const string Description = "Simplify your class to make it more maintainable.";
 
         private static readonly DiagnosticDescriptor Rule =
@@ -48,7 +49,7 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Class
                 if (methodNode is MethodDeclarationSyntax method)
                 {
                     halsteadVolume += HalsteadVolumeVisitor.ComputeHalsteadVolume(method);
-                    cyclomaticComplexity += CyclomaticComplexityHelper.CalculateComplexity(method);
+                    cyclomaticComplexity += CyclomaticComplexityCalculator.CalculateComplexity(method);
                 }
             }
 
@@ -58,7 +59,7 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Class
 
             if (mi < 70)
             {
-                var diagnostic = Diagnostic.Create(Rule, classDeclaration.Identifier.GetLocation(), classDeclaration.Identifier);
+                var diagnostic = Diagnostic.Create(Rule, classDeclaration.Identifier.GetLocation(), classDeclaration.Identifier, Math.Round(mi));
                 context.ReportDiagnostic(diagnostic);
             }
         }

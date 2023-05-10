@@ -1,4 +1,5 @@
-﻿using System.Collections.Immutable;
+﻿using System;
+using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -13,7 +14,7 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Method
         public const string DiagnosticId = "MA001";
         private const string Category = "Maintainability";
         private const string Title = "Simplify this method to improve Maintainability Index";
-        private const string MessageFormat = "Method '{0}' Maintainability Index is too low. Consider simplifying your method.";
+        private const string MessageFormat = "Method '{0}' Maintainability Index is {1}. Consider simplifying your method.";
         private const string Description = "Simplify your method to make it more maintainable.";
 
         private static readonly DiagnosticDescriptor Rule =
@@ -39,13 +40,13 @@ namespace Roslintor.Analyzers.MaintainabilityAnalyzers.Method
         {
             var method = (MethodDeclarationSyntax)context.Node;
             var halsteadVolume = HalsteadVolumeVisitor.ComputeHalsteadVolume(method);
-            var cyclomaticComplexity = CyclomaticComplexityHelper.CalculateComplexity(method);
+            var cyclomaticComplexity = CyclomaticComplexityCalculator.CalculateComplexity(method);
             var linesOfCode = method.GetText().Lines.Count;
             var mi = MICalculator.CalculateMI(halsteadVolume, cyclomaticComplexity, linesOfCode);
 
             if (mi < 70)
             {
-                var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier);
+                var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier, Math.Round(mi));
                 context.ReportDiagnostic(diagnostic);
             }
         }

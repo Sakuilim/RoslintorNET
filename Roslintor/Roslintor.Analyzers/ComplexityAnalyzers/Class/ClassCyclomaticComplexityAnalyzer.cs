@@ -12,7 +12,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Class
     {
         public const string DiagnosticId = "CAR004";
         private const string Title = "Reduce cyclomatic complexity of this class";
-        private const string MessageFormat = "Class '{0}' cyclomatic complexity is too high. Consider simplifying your class.";
+        private const string MessageFormat = "Class '{0}' cyclomatic complexity is {1}. Consider simplifying your class.";
         private const string Category = "Performance";
         private const string Description = "Cyclomatic complexity of this class is too high. Simplify your class to not be complex.";
 
@@ -48,13 +48,13 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Class
             {
                 if (methodNode is MethodDeclarationSyntax method)
                 {
-                    complexity += CyclomaticComplexityHelper.CalculateComplexity(method);
+                    complexity += CyclomaticComplexityCalculator.CalculateComplexity(method);
                 }
             }
             if (complexity >= CyclomaticComplexityThreshold) // Threshold for high complexity
             {
                 // Report diagnostic
-                var diagnostic = Diagnostic.Create(Rule, classDeclaration.Identifier.GetLocation(), classDeclaration.Identifier.Text);
+                var diagnostic = Diagnostic.Create(Rule, classDeclaration.Identifier.GetLocation(), classDeclaration.Identifier.Text, complexity);
                 context.ReportDiagnostic(diagnostic);
             }
         }

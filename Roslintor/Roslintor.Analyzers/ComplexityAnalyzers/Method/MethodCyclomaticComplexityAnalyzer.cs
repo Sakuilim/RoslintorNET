@@ -13,7 +13,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
         public const string DiagnosticId = "CAR001";
         private const string Category = "Performance";
         private const string Title = "Reduce cyclomatic complexity of this method";
-        private const string MessageFormat = "Method '{0}' cyclomatic complexity is too high. Consider simplifying your method.";
+        private const string MessageFormat = "Method '{0}' cyclomatic complexity is {1}. Consider simplifying your method.";
         private const string Description = "Cyclomatic complexity of this method is too high. Simplify your class to not be complex.";
 
         private const int CyclomaticComplexityThreshold = 7;
@@ -42,12 +42,12 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
         {
             var methodDeclaration = (MethodDeclarationSyntax)context.Node;
 
-            var complexity = CyclomaticComplexityHelper.CalculateComplexity(methodDeclaration);
+            var complexity = CyclomaticComplexityCalculator.CalculateComplexity(methodDeclaration);
 
             if (complexity >= CyclomaticComplexityThreshold) // Threshold for high complexity
             {
                 // Report diagnostic
-                var diagnostic = Diagnostic.Create(Rule, methodDeclaration.Identifier.GetLocation(), methodDeclaration.Identifier.Text);
+                var diagnostic = Diagnostic.Create(Rule, methodDeclaration.Identifier.GetLocation(), methodDeclaration.Identifier.Text, complexity);
                 context.ReportDiagnostic(diagnostic);
             }
         }

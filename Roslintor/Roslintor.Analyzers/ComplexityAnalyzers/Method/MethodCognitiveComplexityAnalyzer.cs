@@ -12,7 +12,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
     {
         public const string DiagnosticId = "CAR002";
         private const string Title = "Reduce cognitive complexity of this method";
-        private const string MessageFormat = "Method '{0}' cognitive complexity is too high. Consider simplifying your method.";
+        private const string MessageFormat = "Method '{0}' cognitive complexity is {1}. Consider simplifying your method.";
         private const string Description = "Cognitive complexity of this method is too high. Simplify your class to not be complex.";
         private const string Category = "Performance";
 
@@ -46,7 +46,7 @@ namespace Roslintor.Analyzers.ComplexityAnalyzers.Method
 
             if (cognitiveComplexity > CognitiveComplexityThreshold)
             {
-                var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.Text);
+                var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.Text, cognitiveComplexity);
                 context.ReportDiagnostic(diagnostic);
             }
         }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
 using VerifyCS = Roslintor.Test.CSharpAnalyzerVerifier<
-    Roslintor.Analyzers.PerformanceAnalyzers.PerformancePracticeAnalyzer>;
+    Roslintor.Analyzers.PerformanceAnalyzers.HashSetAnalyzer>;
 
 namespace Roslintor.Tests
 {
