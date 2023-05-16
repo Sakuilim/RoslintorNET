@@ -41,7 +41,7 @@ namespace Roslintor.Analyzers.CodeDuplicationAnalyzers
             var method = (MethodDeclarationSyntax)context.Node;
 
             // Check if the method has a body
-            if (method.Body == null)
+            if (method.Body.Statements.Count == 0 || method.Body == null)
             {
                 return;
             }
