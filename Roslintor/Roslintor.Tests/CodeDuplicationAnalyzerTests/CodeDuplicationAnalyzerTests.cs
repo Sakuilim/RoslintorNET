@@ -67,7 +67,29 @@ namespace Roslintor.Tests.CodeDuplicationAnalyzerTests
             var expected2 = VerifyCS.Diagnostic("CD001").WithLocation(1).WithArguments("MethodName");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected, expected2);
+        }
+        [TestMethod]
+        public async Task CodeDuplicationAnalysisMethodEmpty_Should_ReturnNoDiagnostic()
+        {
+            var test = @"
+            using System;
+            using System.Collections.Generic;
+            using System.Linq;
+            using System.Text;
+            using System.Threading.Tasks;
+            using System.Diagnostics;
 
+            namespace ConsoleApplication1
+            {
+                public class TestClass
+                {   
+                    public void {|#0:MethodName|}(string name)
+                    {
+                    }    
+                }
+            }";
+
+            await VerifyCS.VerifyAnalyzerAsync(test);
         }
     }
 }

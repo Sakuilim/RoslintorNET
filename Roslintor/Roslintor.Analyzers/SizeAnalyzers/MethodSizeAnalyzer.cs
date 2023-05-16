@@ -45,13 +45,10 @@ namespace Roslintor.Analyzers.SizeAnalyzers
             foreach (var item in methodDeclaration)
             {
                 var method = item as MethodDeclarationSyntax;
-                if (method != null)
+                if (method != null && (method.Body == null || method.Body.Statements.Count == 0))
                 {
-                    if (method.Body == null || method.Body.Statements.Count == 0)
-                    {
-                        var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.Text);
-                        context.ReportDiagnostic(diagnostic);
-                    }
+                    var diagnostic = Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.Text);
+                    context.ReportDiagnostic(diagnostic);
                 }
             }
         }
