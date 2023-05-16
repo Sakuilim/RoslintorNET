@@ -557,7 +557,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0",
+          "Roslintor.Helpers": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roslintor.Analyzers.dll": {}
@@ -578,6 +579,19 @@
         },
         "runtime": {
           "bin/placeholder/Roslintor.CodeFixes.dll": {}
+        }
+      },
+      "Roslintor.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Roslintor.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roslintor.Helpers.dll": {}
         }
       }
     }
@@ -1983,6 +1997,11 @@
       "type": "project",
       "path": "../Roslintor.CodeFixes/Roslintor.CodeFixes.csproj",
       "msbuildProject": "../Roslintor.CodeFixes/Roslintor.CodeFixes.csproj"
+    },
+    "Roslintor.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../Roslintor.Helpers/Roslintor.Helpers.csproj",
+      "msbuildProject": "../Roslintor.Helpers/Roslintor.Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1999,7 +2018,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.5",
+    "version": "1.0.9",
     "restore": {
       "projectUniqueName": "C:\\Users\\Marius Milius\\source\\MainRepo\\RoslintorNET\\Roslintor\\Roslintor.Package\\Roslintor.Package.csproj",
       "projectName": "Roslintor",

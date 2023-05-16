@@ -256,8 +256,10 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bi
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\Roslintor.Analyzers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\Roslintor.CodeFixes.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\Roslintor.Helpers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\Roslintor.Analyzers.pdb
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\Roslintor.CodeFixes.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\bin\Release\netcoreapp3.1\Roslintor.Helpers.pdb
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Release\netcoreapp3.1\Roslintor.Tests.csproj.AssemblyReference.cache
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Release\netcoreapp3.1\Roslintor.Tests.csproj.SuggestedBindingRedirects.cache
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Tests\obj\Release\netcoreapp3.1\Roslintor.Tests.dll.config

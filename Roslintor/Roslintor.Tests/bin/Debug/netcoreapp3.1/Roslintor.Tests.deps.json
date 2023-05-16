@@ -19,7 +19,7 @@
           "Microsoft.CodeAnalysis.VisualBasic.CodeFix.Testing.MSTest": "1.1.1",
           "Microsoft.CodeAnalysis.VisualBasic.CodeRefactoring.Testing.MSTest": "1.1.1",
           "Microsoft.NET.Test.Sdk": "17.5.0",
-          "Roslintor.Analyzers": "1.0.0",
+          "Roslintor.Analyzers": "1.0.5",
           "Roslintor.CodeFixes": "1.0.0"
         },
         "runtime": {
@@ -1230,17 +1230,6 @@
           }
         }
       },
-      "Roslintor.Helpers/1.0.2": {
-        "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Roslintor.Helpers.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
-          }
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -2103,10 +2092,9 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Roslintor.Analyzers/1.0.0": {
+      "Roslintor.Analyzers/1.0.5": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0",
-          "Roslintor.Helpers": "1.0.2"
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
         },
         "runtime": {
           "Roslintor.Analyzers.dll": {}
@@ -2115,7 +2103,7 @@
       "Roslintor.CodeFixes/1.0.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Roslintor.Analyzers": "1.0.0"
+          "Roslintor.Analyzers": "1.0.5"
         },
         "runtime": {
           "Roslintor.CodeFixes.dll": {}
@@ -2478,13 +2466,6 @@
       "sha512": "sha512-UIUh1X1XXSOJwc18a7ssTmCAyN7sDXOTfNJN9HfJnWX8NStzQeZq/6RHfSHYMxUjECk6n5alCQjUA51C36R46A==",
       "path": "nuget.versioning/5.6.0",
       "hashPath": "nuget.versioning.5.6.0.nupkg.sha512"
-    },
-    "Roslintor.Helpers/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JdXh2fBzKZ0FFzcdF9ehtr+mbZx+pkHcnQpRVGIETdM2drv5CCf+T8gs/o+ZUsD3SDPLpCtHpj/q/oLe4Jqi1g==",
-      "path": "roslintor.helpers/1.0.2",
-      "hashPath": "roslintor.helpers.1.0.2.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -3137,7 +3118,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Roslintor.Analyzers/1.0.0": {
+    "Roslintor.Analyzers/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

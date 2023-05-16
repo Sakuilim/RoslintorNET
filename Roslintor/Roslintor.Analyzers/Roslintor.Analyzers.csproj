@@ -28,4 +28,8 @@
     <None Include="C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor\.editorconfig" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Roslintor.Helpers\Roslintor.Helpers.csproj" />
+  </ItemGroup>
+
 </Project>

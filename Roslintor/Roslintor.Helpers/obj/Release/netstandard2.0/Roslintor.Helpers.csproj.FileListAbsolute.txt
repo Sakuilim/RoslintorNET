@@ -1,13 +1,3 @@
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\bin\Release\netstandard2.0\Roslintor.Helpers.deps.json
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\bin\Release\netstandard2.0\Roslintor.Helpers.dll
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\bin\Release\netstandard2.0\Roslintor.Helpers.pdb
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Release\netstandard2.0\Roslintor.Helpers.csproj.AssemblyReference.cache
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Release\netstandard2.0\Roslintor.Helpers.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Release\netstandard2.0\Roslintor.Helpers.AssemblyInfoInputs.cache
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Release\netstandard2.0\Roslintor.Helpers.AssemblyInfo.cs
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Release\netstandard2.0\Roslintor.Helpers.csproj.CoreCompileInputs.cache
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Release\netstandard2.0\Roslintor.Helpers.dll
-C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor.Helpers\obj\Release\netstandard2.0\Roslintor.Helpers.pdb
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Helpers\bin\Release\netstandard2.0\Roslintor.Helpers.deps.json
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Helpers\bin\Release\netstandard2.0\Roslintor.Helpers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Helpers\bin\Release\netstandard2.0\Roslintor.Helpers.pdb

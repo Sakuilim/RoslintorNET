@@ -435,10 +435,19 @@
       },
       "Roslintor.Analyzers/1.0.5": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0",
+          "Roslintor.Helpers": "1.0.0"
         },
         "runtime": {
           "Roslintor.Analyzers.dll": {}
+        }
+      },
+      "Roslintor.Helpers/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "4.5.0"
+        },
+        "runtime": {
+          "Roslintor.Helpers.dll": {}
         }
       }
     }
@@ -625,6 +634,11 @@
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "Roslintor.Analyzers/1.0.5": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roslintor.Helpers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

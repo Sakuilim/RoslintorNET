@@ -23,6 +23,16 @@ foreach($analyzersPath in $analyzersPaths)
                 $project.Object.AnalyzerReferences.Add($analyzerFilePath.FullName)
             }
         }
+
+        # Add reference to the Roslintor.Helpers.dll for language specific analyzers
+        $extraLibPath = Join-Path $analyzersPath "Roslintor.Helpers.dll"
+        if (Test-Path $extraLibPath)
+        {
+            if($project.Object.References)
+            {
+                $project.Object.References.Add($extraLibPath)
+            }
+        }
     }
 }
 
@@ -52,6 +62,16 @@ foreach($analyzersPath in $analyzersPaths)
             if($project.Object.AnalyzerReferences)
             {
                 $project.Object.AnalyzerReferences.Add($analyzerFilePath.FullName)
+            }
+        }
+
+        # Add reference to the Roslintor.Helpers.dll for language specific analyzers
+        $extraLibPath = Join-Path $languageAnalyzersPath "Roslintor.Helpers.dll"
+        if (Test-Path $extraLibPath)
+        {
+            if($project.Object.References)
+            {
+                $project.Object.References.Add($extraLibPath)
             }
         }
     }

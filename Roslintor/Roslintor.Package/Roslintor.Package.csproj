@@ -10,7 +10,7 @@
   <PropertyGroup>
 
     <PackageId>Roslintor</PackageId>
-    <PackageVersion>1.0.5</PackageVersion>
+    <PackageVersion>1.0.9</PackageVersion>
     <Authors>Sakuilim</Authors>
     <PackageProjectUrl>https://github.com/Sakuilim/RoslintorNET</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Sakuilim/RoslintorNET</RepositoryUrl>
@@ -18,7 +18,7 @@
     <Description>Roslintor</Description>
     <Copyright>Copyright</Copyright>
     <Description>
-      Update for 1.0.5 Roslintor analyzer
+      Update for 1.0.9 Roslintor analyzer
     </Description>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
@@ -27,8 +27,15 @@
     <RepositoryType>git</RepositoryType>
 
     <Title>Roslintor</Title>
+  
   </PropertyGroup>
-
+	<ItemGroup>
+    <None Include="..\Roslintor.Helpers\bin\Release\netstandard2.0\Roslintor.Helpers.dll">
+        <Pack>true</Pack>
+        <PackagePath>analyzers/dotnet/cs</PackagePath>
+    </None>
+    </ItemGroup>
+	
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
       <PrivateAssets>all</PrivateAssets>

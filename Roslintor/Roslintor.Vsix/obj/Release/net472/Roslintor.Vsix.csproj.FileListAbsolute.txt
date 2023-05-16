@@ -75,8 +75,10 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Release\net472\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Release\net472\Roslintor.Analyzers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Release\net472\Roslintor.CodeFixes.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Release\net472\Roslintor.Helpers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Release\net472\Roslintor.Analyzers.pdb
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Release\net472\Roslintor.CodeFixes.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\bin\Release\net472\Roslintor.Helpers.pdb
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\obj\Release\net472\Roslintor.Vsix.csproj.AssemblyReference.cache
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\obj\Release\net472\_EmptyResource.resources
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Vsix\obj\Release\net472\Roslintor.Vsix.csproj.GenerateResource.cache

@@ -1,5 +1,12 @@
 param($installPath, $toolsPath, $package, $project)
 
+$libraryPath = Join-Path $toolsPath "Roslintor.Helpers.dll"
+
+# Remove the added library reference
+if ($project.Object.References | Where-Object { $_.Path -eq $libraryPath }) {
+    $project.Object.References.Remove("Roslintor.Helpers")
+}
+
 if($project.Object.SupportsPackageDependencyResolution)
 {
     if($project.Object.SupportsPackageDependencyResolution())

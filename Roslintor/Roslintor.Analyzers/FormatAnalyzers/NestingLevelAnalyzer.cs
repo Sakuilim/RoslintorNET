@@ -13,10 +13,10 @@ namespace Roslintor.Analyzers.FormatAnalyzers
         public const string DiagnosticId = "FA001";
         private const string Category = "Format";
         private const string Title = "Method nesting level exceeded";
-        private const string MessageFormat = "Method '{0}' has exceeded the maximum nesting level of {1}";
+        private const string MessageFormat = "Method '{0}' has nesting level of {1} and has exceeded the maximum nesting level of {2}";
         private const string Description = "Methods with excessive nesting levels can be difficult to understand and maintain.";
 
-        private const int NestingLevelThreshold = 4;
+        private const int NestingLevelThreshold = 8;
 
         private static readonly DiagnosticDescriptor Rule =
        new DiagnosticDescriptor(
@@ -43,9 +43,9 @@ namespace Roslintor.Analyzers.FormatAnalyzers
 
             int maxNestingLevel = CalculateMaxNestingLevel(method);
 
-            if (maxNestingLevel >= NestingLevelThreshold)
+            if (maxNestingLevel > NestingLevelThreshold)
             {
-                context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.ValueText, NestingLevelThreshold));
+                context.ReportDiagnostic(Diagnostic.Create(Rule, method.Identifier.GetLocation(), method.Identifier.ValueText, maxNestingLevel/2, NestingLevelThreshold/2));
             }
         }
 
