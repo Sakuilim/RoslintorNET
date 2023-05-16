@@ -76,7 +76,7 @@ namespace Roslintor.Tests.NestingLevelAnalyzerTests
                 }
             }";
 
-            var expected = VerifyCS.Diagnostic("FA001").WithLocation(0).WithArguments("MethodName", "4");
+            var expected = VerifyCS.Diagnostic("FA001").WithLocation(0).WithArguments("MethodName", "5", "4");
 
             await VerifyCS.VerifyAnalyzerAsync(test, expected);
 
