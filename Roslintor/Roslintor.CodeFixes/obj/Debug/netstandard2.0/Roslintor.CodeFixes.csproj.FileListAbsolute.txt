@@ -13,3 +13,5 @@ C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixe
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\obj\Debug\netstandard2.0\Roslintor.CodeFixes.pdb
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.Analyzers.dll
 C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.Analyzers.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.Helpers.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.CodeFixes\bin\Debug\netstandard2.0\Roslintor.Helpers.pdb

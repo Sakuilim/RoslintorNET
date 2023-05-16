@@ -22,3 +22,6 @@ c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Analyzer
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Analyzers\obj\Debug\netstandard2.0\Roslintor.Analyzers.csproj.CoreCompileInputs.cache
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Analyzers\obj\Debug\netstandard2.0\Roslintor.Analyzers.dll
 c:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Analyzers\obj\Debug\netstandard2.0\Roslintor.Analyzers.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Analyzers\bin\Debug\netstandard2.0\Roslintor.Helpers.dll
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Analyzers\bin\Debug\netstandard2.0\Roslintor.Helpers.pdb
+C:\Users\Marius Milius\source\MainRepo\RoslintorNET\Roslintor\Roslintor.Analyzers\obj\Debug\netstandard2.0\Roslintor.Analyzers.csproj.CopyComplete
