@@ -50,7 +50,10 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Sakuilim_RoslintorNET" /o:"sakuilim" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
           dotnet-coverage collect 'dotnet test' -f xml  -o 'coverage.xml'
           ls
-          cd Roslintor\Roslintor.Analyzers
+          cd Roslintor
+          ls
+          cd Roslintor.Analyzers
+          ls
           dotnet build Roslintor.Analyzers.csproj --no-incremental
           cd ..\..
           ls
